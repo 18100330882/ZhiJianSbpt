@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="BizJyjcbgglManager" extends="base" namespace="/">
+        <action name="bizJyjcbggl_*" class="BizJyjcbgglAction" method="{1}">
+            <!--<result name="getJyjcbgglSqsToList">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=getJyjcbgglSqsToList</result>
+            <result name="getBizJyjcbgglOrsqsId">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=getBizJyjcbgglOrsqsId</result>
+            <result name="delJyjcbggl">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=delJyjcbggl</result>
+            <result name="isCompleteBysqsId">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=isCompleteBysqsId</result>
+            <result name="submitSqs">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=submitSqs</result>
+            <result name="submitSqsNew">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=submitSqsNew</result>
+            <result name="getJyjcbgglListByCzr">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=getJyjcbgglListByCzr</result>
+            <result name="getPrintPath">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=getPrintPath</result>
+            <result name="getJyjcbgglWindow">jsp/jyjcbgglReport/JgSqsBglx.jsp</result>
+            <result name="saveJyjc">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=saveJyjc</result>
+            <result name="getBizJyjcbgglById">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=getBizJyjcbgglById</result>
+            <result name="gotoStepPage">jsp/jyjcbgglReport/JgSqsMx.jsp</result>
+            <result name="IssqsDown">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=IssqsDown</result>
+            <result name="getFrbgWindow">jsp/jyjcbgglReport/JgFrxzBg.jsp</result>
+            <result name="getJyjcMcbgglWindow">jsp/jyjcbgglReport/JgSqsMcBgsp.jsp</result>
+            <result name="getJyjcQxnlbgglWindow">jsp/jyjcbgglReport/JgSqsQxjyjcnl2.jsp</result>
+            <result name="getJyjcRybgglWindow">jsp/jyjcbgglReport/JgSqsBgBeiAn2.jsp</result>
+            <result name="getJyjcDzbgglWindow">jsp/jyjcbgglReport/JgSqsDzbg.jsp</result>
+            <result name="getJyjcQzrbgglWindow">jsp/jyjcbgglReport/JgSqsQzrBg.jsp</result>
+            <result name="delJyjcRybgglById">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=delJyjcRybgglById</result>
+            <result name="gotoMcbgStepPage">jsp/jyjcbgglReport/McbgStepPage.jsp</result>
+            <result name="toFuJianWindow">jsp/jyjcbgglReport/JyjcBgglFuJianTreeGrid.jsp</result>
+            <result name="lookBgSqs">jsp/jyjcbgglReport/LookSqs_Mcbg.jsp</result>
+            <result name="getPermit">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=getPermit</result>
+            <result name="getJyjcjgZzzxWindow">jsp/jyjcjgzzzxsqReport/JyjcjgZzzxSqsWindow.jsp</result>
+            <result name="getZxsm">jsp/jyjcjgzzzxsqReport/zxsm.jsp</result>
+            <result name="getQycnWindow">jsp/jyjc/rzrk/zzrd/Qycn.jsp</result>
+            <result name="getSqqzrBgznWindow">jsp/jyjcbgglReport/sqqzrBgzn.jsp</result>
+            <result name="getMcBgznWindow">jsp/jyjcbgglReport/mcBgzn.jsp</result>
+            <result name="getDzBgznWindow">jsp/jyjcbgglReport/dzBgzn.jsp</result>
+            <result name="getQycnBZWindow">jsp/jyjcbgglReport/QycnBZ.jsp</result>
+            <result name="getJyjcbgglByCzr">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=getJyjcbgglByCzr</result>
+            <result name="updateFlag">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=updateFlag</result>
+            <result name="removeSqs">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=removeSqs</result>
+            <result name="downloadSqs">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=downloadSqs</result>
+            <result name="downloadSqsTemp">WEB-INF/jsp/jyjcbgglReport/BizJyjcbgglAjaxService.jsp?method=downloadSqsTemp</result>-->
+
+            <result name="getQycnWindow">jsp/jyjc/rzrk/zzrd/Qycn.jsp</result>
+            <result name="getQycnWindowCj">jsp/jyjccollect/QycnCj.jsp</result>
+            <result name="getQycnWindowBg">jsp/jyjc/rzrk/zzrd/QycnBg.jsp</result>
+            <result name="getQycnWindowZx">jsp/jyjc/rzrk/zzrd/QycnZx.jsp</result>
+            <result name="getQycnWindowCn">jsp/jyjc/rzrk/zzrd/QycnCn.jsp</result>
+        </action>
+    </package>
+</struts>

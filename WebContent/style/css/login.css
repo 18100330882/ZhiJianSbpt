@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+#body {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    padding: 0px;
+    margin: 0px;
+    background: url(../images/login/dl2_bg.jpg) repeat-x #0c59a0
+}
+
+a img {
+    border: 0px;
+}
+
+.left {
+    display: block;
+    float: left
+}
+
+.login_con {
+    width: 970px;
+    height: 700px;
+    background: url(../images/login/main_sx.jpg);
+    margin: 0 auto
+}
+
+.login_wz {
+    width: 385px;
+    overflow: hidden;
+    padding-left: 440px;
+    padding-top: 245px;
+}
+
+.dlcon_nr {
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.user_con {
+    padding-bottom: 8px;
+    padding-top: 6px;
+    line-height: 25px;
+    overflow: hidden
+}
+
+.user_tips {
+    color: red;
+    clear: both;
+    padding-left: 60px;
+}
+
+.user_con label {
+    display: block;
+    float: left;
+    padding-top: 7px;
+    font-size: 14px;
+    color: #343434;
+    margin-right: 10px;
+}
+
+.btn_con {
+    padding-left: 50px;
+    padding-top: 10px;
+    overflow: hidden
+}
+
+.user_btn {
+    display: block;
+    float: left;
+    width: 118px;
+    height: 40px;
+    background: url(../images/login/dl_btn1.jpg);
+    color: #fff;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    margin-right: 15px;
+    border: 0px;
+}
+
+.nr_txtbox1 {
+    width: 235px;
+    padding-right: 30px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    background: url(../images/login/dl_user.jpg) right no-repeat #fff
+}
+
+.nr_txtbox2 {
+    width: 235px;
+    padding-right: 30px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    background: url(../images/login/dl_code.jpg) right no-repeat #fff
+}
+
+.nr_txtbox3 {
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 3px;
+}
+
+.dl_yzm {
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.dl_refresh {
+    float: left;
+    margin-top: 10px;
+}
+
+.dl_zc {
+    display: block;
+    padding: 3px 0px;
+    padding-left: 52px;
+    text-decoration: underline;
+    color: #1965ac;
+}
+
+.login_bot {
+    padding-top: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+#info {
+    color: red;
+    margin-left: 52px;
+}

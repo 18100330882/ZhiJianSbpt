@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ApiShiYsJyjcCd" table='"API_SHIYSJYJC_CD"' >
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"' />
+            <generator class="native">
+               <param name="sequence">SEQ_API_SHIYSJYJC_CD</param>
+            </generator>
+        </id>
+        <property name="siteName" type="string">
+            <column name='"SITENAME"' />
+        </property>
+        <property name="siteAddress" type="string">
+            <column name='"SITEADDRESS"' />
+        </property>
+        <property name="siteType" type="string">
+            <column name='"SITETYPE"' />
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"' />
+        </property>
+         <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23" />
+        </property>
+         <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23" />
+        </property>
+        <property name="unid" type="string">
+            <column name='"UNID"' length="36"/>
+        </property>
+    </class>
+</hibernate-mapping>

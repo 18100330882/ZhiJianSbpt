@@ -1,0 +1,118 @@
+一、实现功能：子页面关闭时，父页面获取子页面控件的值
+//父页面的方法
+    	function zylbbte(){
+    	debugger;
+    		/ar btnEdit = this;
+    	   nui.open({
+    	     url: "<%=request.getContextPath()%>/jiliangbzkhsqs/jibzkh_tsfh.jsp",
+    	     title: "特殊符号",
+    	     width:600,
+    	     height:500,
+    	     onload: function(action){
+
+                },
+                ondestroy: function (action) {  //弹出页面关闭前
+			        if (action == "ok") {       //如果点击“确定”
+			            var iframe = this.getIFrameEl();
+			            var object = iframe.contentWindow.getValue();
+			            var result = nui.get("#sqs.csfw").getValue();
+			            nui.get("#sqs.csfw").setValue(result+object);
+			        }                        
+               }
+            });            
+        }
+
+//子页面的方法
+function getValue(){
+    	return nui.get("tefh1").getValue();
+    	
+    }
+二、实现功能：nui控件之行绑定事件
+<div field="sglb" width="120" renderer="onerndeSglb" headerAlign="center" allowSort="true">
+				<b>施工类别</b>
+			</div>
+			
+    	function onerndeSglb(e){
+    	 var sglbname=e.record.sglb;
+    	 var result = "";
+    	 var sArr = sglbname.split(",");
+    	 for(var i =0, size = sArr.length; i<size;i++){
+    	 	if(sArr[i]=="1"){
+    	 		result += "安装，";
+    	 		continue;
+    	 	}
+    	 	else if(sArr[i]=="2"){
+    	 		result += "维护，";
+    	 		continue;
+    	 	}
+    	 	else if(sArr[i]=="3"){
+    	 		result += "改造，";
+    	 		continue;
+    	 	}
+    	 }
+    	 	result = result.substring(0, result.length-1);
+    		sglbname = result;
+    		return sglbname;
+    	}
+三、实现功能：在线查看图片，txt文件
+	重点是使用BufferedOutputStream流输出
+四、将验证提示从英文转换为中文的写法
+针对控件添加属性 requiredErrorText="帐号不能为空"
+ <input name="username" vtype="email" class="nui-textbox" required="true" requiredErrorText="帐号不能为空" emailErrorText="请输入邮件格式"/>
+五、拿到父页面的控件
+	parent.tree.hide();//隐藏父页面的tree控件。
+六、text不可编辑
+	readonly属性为readonly
+七、日历控件显示文本本地化（在jsp添加下面语句）
+<script type="text/javascript" src="<%=basePath%>nui/locale/zh_CN.js"></script>
+八、为datagrid添加斑马线属性
+allowAlternating="true"
+九、datagrid中列名添加超链接
+  if (column.name == "power") {
+       e.cellStyle = "text-align:center";
+       e.cellHtml = '<a href="javascript:onPower(\'' + record.id + '\')">配置</a>'
+  }
+ 十、nui前后台ajax交互
+ js要添加trim()方法,对字符串进行格式清理。
+ 十一、nui之confirm的用法 nui.confirm(info, title, callback);
+ nui.confirm("确定启用选中记录？","温馨提示",function(e){
+ });
+ 十二、nui的form表单的保存数据时，是根据name属性获得字段值。
+ 十三.点弹出窗口的"X"按钮时,如果有改动,就弹出提示
+  var CloseForm = form;       //定义一个全局的变量名
+        function CloseWindow(action) {
+
+            function doClose() {
+                if (window.CloseOwnerWindow) return window.CloseOwnerWindow(action);
+                else window.close();
+            }
+            
+            if (action == "close" && (!CloseForm || CloseForm.isChanged())) {
+                
+                mini.confirm("数据被修改了，是否先保存？", "确定？",
+                    function (action) {
+                        if (action != "ok") {
+                            doClose();
+                        }
+                    }
+                );
+                return false;
+            }
+
+            doClose();
+
+        }
+十四.考虑下面特殊验证场景:
+	>>可不填,但填的内容需要满足某种规则
+	需要补充onvalidation字段,并修改方法,并不得有required="true"这种属性限定
+		//互联网网址
+		function onWebsite(e){
+			if (e.isValid) {
+				var pattern = /^(http(s)?:\/\/)?(www\.)?[\w-]+\.\w{2,4}(\/)?$/;
+				if (e.value!=""&&!pattern.test(e.value)){
+					e.errorText = "网址格式不正确";
+					e.isValid = false;
+				}
+			}
+		}
+ 

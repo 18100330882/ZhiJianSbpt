@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.startFlow.model.AccountXzsp" table='"ACCOUNTXZSP"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_ACCOUNTXZSP</param>
+            </generator>
+        </id>
+        <property name="userName" type="string">
+            <column name='"USERNAME"' length="50"/>
+        </property>
+        <property name="trueName" type="string">
+            <column name='"TRUENAME"'/>
+        </property>
+        <property name="password" type="string">
+            <column name='"PASSWORD"'/>
+        </property>
+        <property name="sex" type="string">
+            <column name='"SEX"'/>
+        </property>
+        <property name="birthday" type="date">
+            <column name='"BIRTHDAY"'/>
+        </property>
+        <property name="telephone" type="string">
+            <column name='"TELEPHONE"'/>
+        </property>
+        <property name="mobile" type="string">
+            <column name='"MOBILE"' length="20"/>
+        </property>
+        <property name="deptId" type="java.lang.Long">
+            <column name='"DEPTID"'/>
+        </property>
+        <property name="areaId" type="java.lang.Long">
+            <column name='"AREAID"'/>
+        </property>
+        <property name="professional" type="string">
+            <column name='"PROFESSIONAL"'/>
+        </property>
+        <property name="duties" type="string">
+            <column name='"DUTIES"'/>
+        </property>
+        <property name="workDept" type="string">
+            <column name='"WORKDEPT"'/>
+        </property>
+        <property name="cardNumber" type="string">
+            <column name='"CARDNUMBER"' length="20"/>
+        </property>
+        <property name="email" type="string">
+            <column name='"EMAIL"'/>
+        </property>
+        <property name="address" type="string">
+            <column name='"ADDRESS"'/>
+        </property>
+        <property name="isLock" type="int">
+            <column name='"ISLOCK"'/>
+        </property>
+        <property name="shxydm" type="string">
+            <column name='"SHXYDM"'/>
+        </property>
+        <property name="caoR" type="string">
+            <column name='"CAOR"' length="50"/>
+        </property>
+        <property name="sclbIds" type="string">
+            <column name='"SCLBIDS"' length="50"/>
+        </property>
+        <property name="caoDate" type="timestamp">
+            <column name='"CAODATE"'/>
+        </property>
+        <property name="workpj" type="string">
+            <column name='"WORKPJ"'/>
+        </property>
+        <property name="bank" type="string">
+            <column name='"BANK"'/>
+        </property>
+        <property name="bankNumber" type="string">
+            <column name='"BANKNUMBER"'/>
+        </property>
+        <property name="flag" type="string">
+            <column name='"FLAG"'/>
+        </property>
+        <property name="hangye" type="string">
+            <column name='"HANGYE"'/>
+        </property>
+        <property name="pageDisplayStatus" type="string">
+            <column name='"PAGEDISPLAYSTATUS"'/>
+        </property>
+        <property name="age" type="string">
+            <column name='"AGE"'/>
+        </property>
+    </class>
+</hibernate-mapping>

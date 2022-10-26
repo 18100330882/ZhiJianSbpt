@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.flowBase.ApiFile" table='"API_FILE"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_API_FILE</param>
+            </generator>
+        </id>
+        <property name="flowId" type="java.lang.Long">
+            <column name='"FLOWID"'/>
+        </property>
+        <property name="fileName" type="string">
+            <column name='"FILENAME"'/>
+        </property>
+        <property name="fileType" type="string">
+            <column name='"FILETYPE"'/>
+        </property>
+        <property name="flag" type="string">
+            <column name='"FLAG"'/>
+        </property>
+        <property name="filePath" type="string">
+            <column name='"FILEPATH"'/>
+        </property>
+        <property name="localFilePath" type="string">
+            <column name='"LOCALFILEPATH"'/>
+        </property>
+        <property name="orderNum" type="integer">
+            <column name='"ORDERNUM"'/>
+        </property>
+        <property name="fileBase64" type="string">
+            <column name='"FILEBASE64"' length="4000"/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+        <property name="state" type="integer">
+            <column name='"STATE"'/>
+        </property>
+        <property name="unid" type="string">
+            <column name='"UNID"' length="36"/>
+        </property>
+        <property name="yjFlowFuJianId" type="java.lang.Long">
+            <column name='"YJFLOWFUJIANID"'/>
+        </property>
+        <property name="siteAddress" type="string">
+            <column name='"SITEADDRESS"'/>
+        </property>
+        <property name="paiXu" type="integer">
+            <column name='"PAIXU"'/>
+        </property>
+        <property name="czr" type="string">
+            <column name='"CZR"'/>
+        </property>
+    </class>
+</hibernate-mapping>

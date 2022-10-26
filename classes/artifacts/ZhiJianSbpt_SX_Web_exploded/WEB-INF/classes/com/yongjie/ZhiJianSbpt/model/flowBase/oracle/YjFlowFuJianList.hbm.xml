@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-1 14:59:26 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.flowBase.YjFlowFuJianList" table="YJFLOWFUJIANLIST">
+        <id name="id" type="long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_YJFLOWFUJIANLIST</param>
+            </generator>
+        </id>
+        <property name="flowId" type="java.lang.Long">
+            <column name="FLOWID"/>
+        </property>
+        <property name="sqsType" type="string">
+            <column name="SQSTYPE"/>
+        </property>
+        <property name="fileName" type="string">
+            <column name="FILENAME"/>
+        </property>
+        <property name="fileExtense" type="string">
+            <column name="FILEEXTENSE"/>
+        </property>
+        <property name="fileMaxSize" type="string">
+            <column name="FILEMAXSIZE"/>
+        </property>
+        <property name="memo" type="string">
+            <column name="MEMO"/>
+        </property>
+        <property name="groupId" type="java.lang.Integer">
+            <column name="GROUPID"/>
+        </property>
+        <property name="paiXu" type="java.lang.Integer">
+            <column name="PAIXU"/>
+        </property>
+        <property name="caoR" type="string">
+            <column name="CAOR"/>
+        </property>
+        <property name="caoDate" type="timestamp">
+            <column name="CAODATE" length="23"/>
+        </property>
+    </class>
+</hibernate-mapping>

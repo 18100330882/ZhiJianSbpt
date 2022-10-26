@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.JgObject" table="JGOBJECT">
+        <id name="id" type="java.lang.Long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_JGOBJECT</param>
+            </generator>
+        </id>
+        <property name="jgObjectName" type="string">
+            <column name="JGOBJECTNAME"/>
+        </property>
+        <property name="password" type="string">
+            <column name='"PASSWORD"'/>
+        </property>
+        <property name="jcxx" type="string">
+            <column name='"JCXX"'/>
+        </property>
+        <property name="shxydm" type="string">
+            <column name="SHXYDM"/>
+        </property>
+        <property name="fddbr" type="string">
+            <column name="FDDBR"/>
+        </property>
+        <property name="fddbrIdCard" type="string">
+            <column name="FDDBRIDCARD"/>
+        </property>
+        <property name="lxr" type="string">
+            <column name="LXR"/>
+        </property>
+        <property name="lxdh" type="string">
+            <column name="LXDH"/>
+        </property>
+        <property name="zhusuo" type="string">
+            <column name="ZHUSUO"/>
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL"/>
+        </property>
+        <property name="jgAreaId" type="java.lang.Long">
+            <column name="JGAREAID"/>
+        </property>
+        <property name="state" type="int">
+            <column name="STATE"/>
+        </property>
+        <property name="jgObjectType" type="int">
+            <column name="JGOBJECTTYPE"/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="CREATEDATE"/>
+        </property>
+        <property name="guimo" type="string">
+            <column name="GUIMO"/>
+        </property>
+        <property name="isDel" type="string">
+            <column name="ISDEL"/>
+        </property>
+        <property name="x" type="string">
+            <column name="X"/>
+        </property>
+        <property name="y" type="string">
+            <column name="Y"/>
+        </property>
+        <property name="czr" type="string">
+            <column name="CZR" length="50"/>
+        </property>
+        <property name="czDate" type="timestamp">
+            <column name="CZDATE" length="23"/>
+        </property>
+        <property name="jgflId" type="int">
+            <column name="JGFLID"/>
+        </property>
+        <property name="scdz" type="string">
+            <column name="SCDZ" length="50"/>
+        </property>
+        <property name="createYear" type="string">
+            <column name="CREATEYEAR"/>
+        </property>
+        <property name="sbxxid" type="int">
+            <column name="SBXXID"/>
+        </property>
+        <property name="tsaqgly" type="string">
+            <column name="TSAQGLY"/>
+        </property>
+        <property name="szSheng" type="string">
+            <column name="SZSHENG"/>
+        </property>
+        <property name="szShi" type="string">
+            <column name="SZSHI"/>
+        </property>
+        <property name="yzbm" type="string">
+            <column name="YZBM"/>
+        </property>
+        <property name="cz" type="string">
+            <column name="CZ"/>
+        </property>
+        <property name="wz" type="string">
+            <column name="WZ"/>
+        </property>
+        <property name="fddbrdh" type="string">
+            <column name="FDDBRDH"/>
+        </property>
+        <property name="jgfzr" type="string">
+            <column name="JGFZR"/>
+        </property>
+        <property name="jgfzrdh" type="string">
+            <column name="JGFZRDH"/>
+        </property>
+        <property name="pslxr" type="string">
+            <column name="PSLXR"/>
+        </property>
+        <property name="pslxrdh" type="string">
+            <column name="PSLXRDH"/>
+        </property>
+        <property name="jgzrs" type="string">
+            <column name="JGZRS"/>
+        </property>
+        <property name="psyzrs" type="string">
+            <column name="PSYZRS"/>
+        </property>
+        <property name="jsfzr" type="string">
+            <column name="JSFZR"/>
+        </property>
+        <property name="jsfzrdh" type="string">
+            <column name="JSFZRDH"/>
+        </property>
+        <property name="dwdh" type="string">
+            <column name="DWDH"/>
+        </property>
+        <property name="flag" type="int">
+            <column name="FLAG"/>
+        </property>
+        <property name="isDlf" type="int">
+            <column name="ISDLF"/>
+        </property>
+        <property name="newShxydm" type="string">
+            <column name="NEWSHXYDM" length="100"/>
+        </property>
+
+        <!--检验检测机构负责人职务-->
+        <property name="jgfzrzw" type="string">
+            <column name="JGFZRZW"/>
+        </property>
+
+        <!--检验检测机构负责人手机-->
+        <property name="jgfzrPhone" type="string">
+            <column name="JGFZRPHONE"/>
+        </property>
+        <!--检验检测机构联络人 -->
+        <property name="jgllr" type="string">
+            <column name="JGLLR"/>
+        </property>
+        <!--检验检测机构联络人职务-->
+        <property name="jgllrzw" type="string">
+            <column name="JGLLRZW"/>
+        </property>
+        <!--检验检测机构联络人电话-->
+        <property name="jgrllrdh" type="string">
+            <column name="JGRLLRDH"/>
+        </property>
+        <!--检验检测机构联络人手机-->
+        <property name="jgllrPhone" type="string">
+            <column name="JGLLRPHONE"/>
+        </property>
+
+        <!--所属法人单位名称（若检验检测机构是法人单位的此项不填）-->
+        <property name="frdwmc" type="string">
+            <column name="FRDWMC"/>
+        </property>
+        <!--法人地址-->
+        <property name="frdz" type="string">
+            <column name="FRDZ"/>
+        </property>
+        <!--法人邮编 -->
+        <property name="fryb" type="string">
+            <column name="FRYB"/>
+        </property>
+        <!--法人传真-->
+        <property name="frFax" type="string">
+            <column name="FRFAX"/>
+        </property>
+        <!--法人邮箱-->
+        <property name="frEmail" type="string">
+            <column name="FREMAIL"/>
+        </property>
+        <!--法人负责人-->
+        <property name="frfzr" type="string">
+            <column name="FRFZR"/>
+        </property>
+        <!--法人负责人职务-->
+        <property name="frfzrzw" type="string">
+            <column name="FRFZRZW"/>
+        </property>
+        <!--法人负责人电话-->
+        <property name="frfzrPhone" type="string">
+            <column name="FRFZRPHONE"/>
+        </property>
+
+        <!--检验检测机构设施特点-->
+        <!--固定□        临时□          可移动□       多场所□-->
+        <property name="jgsstd" type="string">
+            <column name="JGSSTD"/>
+        </property>
+
+        <!--(法人类别) ->独立法人检验检测机构-->
+        <!--社团法人□      事业法人□     企业法人□       其他□-->
+        <property name="dljgfrlb" type="string">
+            <column name="DLJGFRLB"/>
+        </property>
+
+        <!--(法人类别) ->检验检测机构所属法人（非独立法人检验检测机构填此项）-->
+        <!--社团法人□      事业法人□     企业法人□       其他□-->
+        <property name="fdljgfrlb" type="string">
+            <column name="FDLJGFRLB"/>
+        </property>
+
+        <!--资质认定证书编号(检验检测机构现有证书情况)-->
+        <property name="zzrdzsbh" type="string">
+            <column name="ZZRDZSBH"/>
+        </property>
+
+
+        <!--证书有效截止日(检验检测机构现有证书情况)-->
+        <property name="zsjzDate" type="timestamp">
+            <column name="ZSJZDATE" length="23"/>
+        </property>
+        <!--证书发证日(检验检测机构现有证书情况)-->
+        <property name="zsfzDate" type="timestamp">
+            <column name="ZSFZDATE" length="23"/>
+        </property>
+
+
+        <!--专业类别名称(传编号对应的名称) -->
+        <property name="zylbName" type="string">
+            <column name="ZYLBNAME"/>
+        </property>
+        <!--专业类别代码(传名称对应的编号) -->
+        <property name="zylbId" type="java.lang.Long">
+            <column name="ZYLBID"/>
+        </property>
+        <!--区域(AREA)-->
+        <!--2 咸阳市;3 铜川市;4 商洛市;5 宝鸡市; 6 渭南市; 7 西安市;-->
+        <!--8 杨凌示范区; 9 榆林市; 10 安康市; 11 汉中市; 12 西咸新区;-->
+        <!--13 延安市;14 韩城市-->
+        <!--区域代码(传名称对应的编号)-->
+        <property name="areaId" type="java.lang.Long">
+            <column name="AREAID"/>
+        </property>
+        <!--区域名称 (传编号对应的名字)-->
+        <property name="areaName" type="string">
+            <column name="AREANAME"/>
+        </property>
+        <!--县级 区  ID-->
+        <property name="countyAreaId" type="string">
+            <column name="COUNTYAREAID"/>
+        </property>
+        <!--流水号-->
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER"/>
+        </property>
+        <property name="sbflag" type="string">
+            <column name="SBFLAG"/>
+        </property>
+        <property name="lngLat" type="string">
+            <column name="LNGLAT"/>
+        </property>
+        <property name="bgContact" type="string">
+            <column name="BGCONTACT"/>
+        </property>
+        <property name="bgPhone" type="string">
+            <column name="BGPHONE"/>
+        </property>
+        <property name="loginPhone" type="string">
+            <column name="LOGINPHONE"/>
+        </property>
+        <property name="collectId" type="string">
+            <column name="COLLECTID" length="50"/>
+        </property>
+
+        <property name="collectDate" type="timestamp">
+            <column name="COLLECTDATE" length="23"/>
+        </property>
+
+        <property name="ssfrdwmc" type="string">
+            <column name="SSFRDWMC" length="200"/>
+        </property>
+        <property name="ssfrdz" type="string">
+            <column name="SSFRDZ" length="200"/>
+        </property>
+        <property name="ssfrshxydm" type="string">
+            <column name="SSFRSHXYDM" length="150"/>
+        </property>
+        <property name="zgbm" type="string">
+            <column name="ZGBM" length="150"/>
+        </property>
+        <property name="zgbmdz" type="string">
+            <column name="ZGBMDZ" length="200"/>
+        </property>
+        <property name="zgbmlxr" type="string">
+            <column name="ZGBMLXR" length="200"/>
+        </property>
+        <property name="zgbmzw" type="string">
+            <column name="ZGBMZW" length="200"/>
+        </property>
+        <property name="zgbmdh" type="string">
+            <column name="ZGBMDH" length="200"/>
+        </property>
+        <property name="fddbrzw" type="string">
+            <column name="FDDBRZW" length="200"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
+    <display-name>ZhiJianSbpt</display-name>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/404.jsp</location>
+    </error-page>
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+
+    <!-- 编码过滤器 -->
+    <filter>
+        <filter-name>CharactorFilter</filter-name>
+        <filter-class>
+            com.yongjie.ZhiJianSbpt.filter.CharactorFilter
+        </filter-class>
+        <init-param>
+            <param-name>encoding</param-name><!--参数名称-->
+            <param-value>UTF-8</param-value><!--参数值-->
+        </init-param>
+    </filter>
+    <filter-mapping> <!--过滤器映射-->
+        <filter-name>CharactorFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>UserFilter</filter-name>
+        <filter-class>com.yongjie.ZhiJianSbpt.utilities.UserFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UserFilter</filter-name>
+        <url-pattern>/jsp/*</url-pattern>
+    </filter-mapping>
+    <display-name>struts2_1</display-name>
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>*.action</url-pattern>
+    </filter-mapping>
+    <!--   <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+      </filter-mapping> -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:beans*.xml</param-value>
+    </context-param>
+
+    <!-- 条形码 start-->
+    <servlet>
+        <servlet-name>CreateBarCode</servlet-name>
+        <!--suppress WebProperties -->
+        <servlet-class>com.yongjie.ZhiJianSbpt.utilities.BarCodeImage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateBarCode</servlet-name>
+        <url-pattern>/CreateBarCode</url-pattern>
+    </servlet-mapping>
+    <!-- 条形码 end-->
+
+    <!-- PageOffice Begin -->
+    <servlet>
+        <servlet-name>poserver</servlet-name>
+        <servlet-class>com.zhuozhengsoft.pageoffice.poserver.Server</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/poserver.zz</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/poserver.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/pageoffice.cab</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/popdf.cab</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/sealsetup.exe</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/posetup.exe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>adminseal</servlet-name>
+        <servlet-class>com.zhuozhengsoft.pageoffice.poserver.AdminSeal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminseal</servlet-name>
+        <url-pattern>/adminseal.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminseal</servlet-name>
+        <url-pattern>/loginseal.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminseal</servlet-name>
+        <url-pattern>/sealimage.do</url-pattern>
+    </servlet-mapping>
+    <mime-mapping>
+        <extension>mht</extension>
+        <mime-type>message/rfc822</mime-type>
+    </mime-mapping>
+    <context-param>
+        <param-name>adminseal-password</param-name>
+        <param-value>111111</param-value>
+    </context-param>
+
+    <!-- webservice 的配置 begin -->
+    <servlet>
+        <servlet-name>CXFServlet</servlet-name>
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CXFServlet</servlet-name>
+        <!-- 请求以/webservice/开头的都用cxf解析 -->
+        <url-pattern>/webservice/*</url-pattern>
+    </servlet-mapping>
+    <!-- webservice 的配置 end -->
+</web-app>

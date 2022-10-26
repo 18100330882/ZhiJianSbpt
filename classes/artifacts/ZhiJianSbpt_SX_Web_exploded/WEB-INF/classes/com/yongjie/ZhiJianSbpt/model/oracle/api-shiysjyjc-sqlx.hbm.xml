@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ApiShiYsJyjcSqlx" table='"API_SHIYSJYJC_SQLX"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_API_SHIYSJYJC_SQLX</param>
+            </generator>
+        </id>
+        <property name="applicationType" type="string">
+            <column name='"APPLICATIONTYPE"'/>
+        </property>
+        <property name="cmaPermitNumber" type="string">
+            <column name='"CMAPERMITNUMBER"' length="36"/>
+        </property>
+        <property name="cmaPermitEffectiveDate" type="timestamp">
+            <column name='"CMAPERMITEFFECTIVEDATE"' length="23"/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+        <property name="calPermitNumber" type="string">
+            <column name='"CALPERMITNUMBER"' length="36"/>
+        </property>
+        <property name="calPermitEffectiveDate" type="timestamp">
+            <column name='"CALPERMITEFFECTIVEDATE"' length="23"/>
+        </property>
+    </class>
+</hibernate-mapping>

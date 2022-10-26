@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-9 10:22:16 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.flowBase.YjFlowInstWenShu" table='"YJFLOWINSTWENSHU"'>
+        <id name="id" type="long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_YJFLOWINSTWENSHU</param>
+            </generator>
+        </id>
+        <property name="nodeId" type="string">
+            <column name='"NODEID"'/>
+        </property>
+        <property name="flowId" type="long">
+            <column name='"FLOWID"'/>
+        </property>
+        <property name="flowInstId" type="long">
+            <column name='"FLOWINSTID"'/>
+        </property>
+        <property name="bizId" type="long">
+            <column name='"BIZID"'/>
+        </property>
+        <property name="wenHao" type="string">
+            <column name='"WENHAO"'/>
+        </property>
+        <property name="fileTitle" type="string">
+            <column name='"FILETITLE"'/>
+        </property>
+        <property name="filePath" type="string">
+            <column name='"FILEPATH"'/>
+        </property>
+        <property name="fileSize" type="long">
+            <column name='"FILESIZE"'/>
+        </property>
+        <property name="extense" type="string">
+            <column name='"EXTENSE"'/>
+        </property>
+        <property name="tiaoMa" type="string">
+            <column name='"TIAOMA"'/>
+        </property>
+        <property name="isgz" type="integer">
+            <column name='"ISGZ"'/>
+        </property>
+        <property name="flag" type="integer">
+            <column name='"FLAG"'/>
+        </property>
+        <property name="fileTypeId" type="long">
+            <column name='"FILETYPEID"'/>
+        </property>
+        <property name="type" type="integer">
+            <column name='"TYPE"'/>
+        </property>
+        <property name="paixu" type="integer">
+            <column name='"PAIXU"'/>
+        </property>
+        <property name="czr" type="string">
+            <column name='"CZR"'/>
+        </property>
+        <property name="czDate" type="timestamp">
+            <column name='"CZDATE"' length="23"/>
+        </property>
+        <property name="license_code" type="string">
+            <column name='"LICENSE_CODE"'/>
+        </property>
+        <property name="auth_code" type="string">
+            <column name='"AUTH_CODE"'/>
+        </property>
+        <property name="netWorkPath" type="string">
+            <column name='"NETWORKPATH"'/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+
+        <property name="lng" type="string">
+            <column name='"LNG"'/>
+        </property>
+        <property name="lat" type="string">
+            <column name='"LAT"'/>
+        </property>
+        <property name="imgAddress" type="string">
+            <column name='"IMGADDRESS"'/>
+        </property>
+        <property name="imgTime" type="string">
+            <column name='"IMGTIME"'/>
+        </property>
+        <property name="bglx" type="string">
+            <column name='"BGLX"'/>
+        </property>
+        <property name="pzDate" type="timestamp">
+            <column name='"PZDATE"' length="23"/>
+        </property>
+        <property name="sqDate" type="timestamp">
+            <column name='"SQDATE"' length="23"/>
+        </property>
+        <property name="sqlx" type="string">
+            <column name='"SQLX"'/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-8-10 14:53:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.bggl.model.ChangeApplyInfo" table="CHANGEAPPLYINFO">
+        <id name="id" type="long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_CHANGEAPPLYINFO</param>
+            </generator>
+        </id>
+
+        <property name="jgName" type="string">
+            <column name="JGNAME">
+                <comment>机构名称</comment>
+            </column>
+        </property>
+
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER"/>
+        </property>
+
+        <property name="changeType" type="string">
+            <column name="CHANGETYPE"/>
+        </property>
+
+        <property name="lxrName" type="string">
+            <column name="LXRNAME"/>
+        </property>
+
+        <property name="lxrTel" type="string">
+            <column name="LXRTEL"/>
+        </property>
+
+        <property name="address" type="string">
+            <column name="ADDRESS"/>
+        </property>
+
+        <property name="email" type="string">
+            <column name="EMAIL"/>
+        </property>
+
+        <property name="fax" type="string">
+            <column name="FAX"/>
+        </property>
+
+        <property name="deptOpinion" type="string">
+            <column name="DEPTOPINION"/>
+        </property>
+
+        <property name="deptOpinionDate" type="timestamp">
+            <column name="DEPTOPINIONDATE"/>
+        </property>
+
+        <property name="applyDate" type="timestamp">
+            <column name="APPLYDATE"/>
+        </property>
+
+        <property name="cmaPermitNum" type="string">
+            <column name="CMAPERMITNUM"/>
+        </property>
+
+        <property name="certificateEfficientDate" type="timestamp">
+            <column name="CERTIFICATEEFFICIENTDATE"/>
+        </property>
+
+        <property name="addressOld" type="string">
+            <column name="ADDRESSOLD"/>
+        </property>
+
+        <property name="addressNew" type="string">
+            <column name="ADDRESSNEW"/>
+        </property>
+
+        <property name="addressChangeReason" type="string">
+            <column name="ADDRESSCHANGEREASON"/>
+        </property>
+
+        <property name="natureChange" type="string">
+            <column name="NATURECHANGE"/>
+        </property>
+
+        <property name="natureOld" type="string">
+            <column name="NATUREOLD"/>
+        </property>
+
+        <property name="natureNew" type="string">
+            <column name="NATURENEW"/>
+        </property>
+
+        <property name="natureRemark" type="string">
+            <column name="NATUREREMARK"/>
+        </property>
+
+        <property name="unitChange" type="string">
+            <column name="UNITCHANGE"/>
+        </property>
+
+        <property name="unitOld" type="string">
+            <column name="UNITOLD"/>
+        </property>
+
+        <property name="unitNew" type="string">
+            <column name="UNITNEW"/>
+        </property>
+
+        <property name="unitRemark" type="string">
+            <column name="UNITREMARK"/>
+        </property>
+
+        <property name="unitNameChange" type="string">
+            <column name="UNITNAMECHANGE"/>
+        </property>
+
+        <property name="unitNameOld" type="string">
+            <column name="UNITNAMEOLD"/>
+        </property>
+
+        <property name="unitNameNew" type="string">
+            <column name="UNITNAMENEW"/>
+        </property>
+
+        <property name="nuitNameRemark" type="string">
+            <column name="NUITNAMEREMARK"/>
+        </property>
+
+        <property name="nameOld" type="string">
+            <column name="NAMEOLD"/>
+        </property>
+
+        <property name="nameNew" type="string">
+            <column name="NAMENEW"/>
+        </property>
+
+        <property name="nameChangeReason" type="string">
+            <column name="NAMECHANGEREASON"/>
+        </property>
+
+        <property name="fzrReviewOpinion" type="string">
+            <column name="FZRREVIEWOPINION"/>
+        </property>
+
+        <property name="fzrReviewOpinionDate" type="timestamp">
+            <column name="FZRREVIEWOPINIONDATE"/>
+        </property>
+
+        <property name="zjReviewOpinion" type="string">
+            <column name="ZJREVIEWOPINION"/>
+        </property>
+
+        <property name="zjReviewOpinionDate" type="timestamp">
+            <column name="ZJREVIEWOPINIONDATE"/>
+        </property>
+
+        <property name="superiorDeptOpinion" type="string">
+            <column name="SUPERIORDEPTOPINION"/>
+        </property>
+
+        <property name="superiorDeptOpinionDate" type="timestamp">
+            <column name="SUPERIORDEPTOPINIONDATE"/>
+        </property>
+
+        <property name="createDate" type="timestamp">
+            <column name="CREATEDATE"/>
+        </property>
+
+        <property name="updateDate" type="timestamp">
+            <column name="UPDATEDATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,121 @@
+div.step_context {
+	height: 80px;
+	margin-top:15px;
+	float:left;
+	position:relative;
+	left:50%;
+}
+	
+.step_context ul {
+	height: 80px;
+	width: auto;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	position:relative;/*相对位置*/
+	left:-50%;
+}
+
+.step_context li {
+	background-image: url(../images/step2.png);
+	background-repeat: no-repeat;
+	border: none;
+	height: 41px;
+	width: 80px;
+	float: left;
+	list-style: none;
+	line-height: 41px;
+	position: relative;/*相对位置*/
+}
+.step_context li  span {
+	width: 35px;
+	height: 26px;
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 32px;
+	line-height: 25px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.step_context li a {
+	border: none;
+	height: 41px;
+	width: 80px;
+	float: left;
+	color: #003300;
+	top: 35px;
+	text-decoration: none;
+	font-size: 12px;
+	list-style: none;
+	text-align: center;
+	position: absolute;
+}
+
+li.firstFinshStep {
+	background-position: 0px -97px;
+}
+
+li.firstFinshStep a {
+	
+}
+/*首次完成*/
+li.firstFinshStep_curr1 {
+	background-position: 0px -287px;
+}
+
+li.firstFinshStep_curr1 a {
+	
+}
+/*完成步骤*/
+li.finshStep {
+	background-position: 0px -235px;
+}
+
+li.finshStep a {
+	
+}
+
+li.coressStep {
+	background-position: 0px -47px;
+}
+
+li.coressStep a {
+	
+}
+
+/*加载步骤*/
+li.loadStep {
+	background-position: 0px -1px;
+}
+
+li.loadStep a {
+	
+}
+
+li.loadStep  span {
+	color: #3aa6ee;
+}
+/*完成最后一步*/
+li.finshlast {
+	background-position: 0px -144px;
+}
+
+li.finshlast a {
+	
+}
+/*最后一个标签*/
+li.last {
+	background-position: 0px -185px;
+}
+
+li.last a {
+	
+}
+
+li.last  span {
+	color: #3aa6ee;
+}

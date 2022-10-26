@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-8-10 14:53:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.bggl.model.CancelNlDetails" table="CANCELNLDETAILS">
+        <id name="id" type="long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_CANCELNLDETAILS</param>
+            </generator>
+        </id>
+
+        <property name="jgName" type="string">
+            <column name="JGNAME">
+                <comment>机构名称</comment>
+            </column>
+        </property>
+
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER"/>
+        </property>
+
+        <property name="cmaPermitNum" type="string">
+            <column name="CMAPERMITNUM"/>
+        </property>
+
+        <property name="sortNum" type="string">
+            <column name="SORTNUM"/>
+        </property>
+
+        <property name="category" type="string">
+            <column name="CATEGORY"/>
+        </property>
+
+        <property name="productSortNum" type="string">
+            <column name="PRODUCTSORTNUM"/>
+        </property>
+
+        <property name="productName" type="string">
+            <column name="PRODUCTNAME"/>
+        </property>
+
+        <property name="standardNameAndNum" type="string">
+            <column name="STANDARDNAMEANDNUM"/>
+        </property>
+
+        <property name="laboratoryPlace" type="string">
+            <column name="LABORATORYPLACE"/>
+        </property>
+
+        <property name="createDate" type="timestamp">
+            <column name="CREATEDATE"/>
+        </property>
+
+        <property name="updateDate" type="timestamp">
+            <column name="UPDATEDATE"/>
+        </property>
+
+        <property name="sortNumbg" type="string">
+            <column name="SORTNUMBG"/>
+        </property>
+
+        <property name="jgobjectnlId" type="java.lang.Long">
+            <column name="JGOBJECTNLID"/>
+        </property>
+
+        <property name="limitRange" type="string">
+            <column name="LIMITRANGE"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="AreaManager" extends="base" namespace="/">
+        <action name="area_*" class="AreaAction" method="{1}">
+            <result name="getArea">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=getArea</result>
+            <result name="getTree">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=getTree</result>
+            <result name="getData">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=getData</result>
+            <result name="addPage">jsp/sysBase/AreaWindow.jsp</result>
+            <result name="addArea">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=addArea</result>
+            <result name="activeArea">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=activeArea</result>
+            <result name="forbidArea">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=forbidArea</result>
+            <result name="checkAreaNumber">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=checkAreaNumber</result>
+            <result name="getPaiXu">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=getPaiXu</result>
+            <result name="getAllAreaNameById">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=getAllAreaNameById</result>
+            <result name="treeForRegist">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=treeForRegist</result>
+            <result name="getAreas">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=getAreas</result>
+            <result name="getNodeNames">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=getNodeNames</result>
+            <result name="areaTree">WEB-INF/jsp/sysBase/AreaAjaxService.jsp?method=areaTree</result>
+        </action>
+    </package>
+</struts>

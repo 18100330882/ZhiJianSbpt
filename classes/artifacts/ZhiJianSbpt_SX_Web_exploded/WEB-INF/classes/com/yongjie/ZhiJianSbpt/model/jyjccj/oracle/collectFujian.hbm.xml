@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.jyjccj.CollectFujian" table="JYJC_CollectFujian">
+        <id name="id" type="java.lang.Long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_JYJC_CollectFujian</param>
+            </generator>
+        </id>
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER" length="255"/>
+        </property>
+        <property name="zsbh" type="string">
+            <column name="ZSBH" length="255"/>
+        </property>
+        <property name="fileTitle" type="string">
+            <column name="FILETITLE" length="255"/>
+        </property>
+        <property name="filePath" type="string">
+            <column name="FILEPATH" length="255"/>
+        </property>
+        <property name="czr" type="string">
+            <column name="CZR" length="255"/>
+        </property>
+        <property name="suffiName" type="string">
+            <column name="SUFFINAME" length="255"/>
+        </property>
+        <property name="fileType" type="string">
+            <column name="FILETYPE" length="255"/>
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="2"/>
+        </property>
+
+        <property name="czDate" type="timestamp">
+            <column name="CZDATE" length="23"/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="CREATEDATE" length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name="UPDATEDATE" length="23"/>
+        </property>
+
+    </class>
+</hibernate-mapping>

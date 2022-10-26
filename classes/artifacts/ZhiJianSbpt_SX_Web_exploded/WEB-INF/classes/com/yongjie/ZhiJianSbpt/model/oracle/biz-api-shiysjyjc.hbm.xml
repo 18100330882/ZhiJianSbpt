@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.BizApiShiYsJyjc" table='"BIZ_API_SHIYSJYJC"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_BIZ_API_SHIYSJYJC</param>
+            </generator>
+        </id>
+        <property name="flowId" type="java.lang.Long">
+            <column name='"FLOWID"'/>
+        </property>
+        <property name="flowInstId" type="java.lang.Long">
+            <column name='"FLOWINSTID"' unique="true"/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"' unique="true"/>
+        </property>
+        <property name="cmaCalType" type="string">
+            <column name='"CMACALTYPE"'/>
+        </property>
+        <property name="zylylbDm" type="string">
+            <column name='"ZYLYLBDM"'/>
+        </property>
+        <property name="zylylbName" type="string">
+            <column name='"ZYLYLBNAME"'/>
+        </property>
+        <property name="jgmc" type="string">
+            <column name='"JGMC"'/>
+        </property>
+        <property name="zgbmDm" type="string">
+            <column name='"ZGBMDM"'/>
+        </property>
+        <property name="zgbmName" type="string">
+            <column name='"ZGBMNAME"'/>
+        </property>
+        <property name="sqrq" type="timestamp">
+            <column name='"SQRQ"' length="23"/>
+        </property>
+        <property name="xwpsrq" type="timestamp">
+            <column name='"XWPSRQ"' length="23"/>
+        </property>
+        <property name="shxydm" type="string" length="20">
+            <column name='"SHXYDM"'/>
+        </property>
+        <property name="areaName" type="string">
+            <column name='"AREANAME"'/>
+        </property>
+        <property name="areaId" type="java.lang.Long">
+            <column name='"AREAID"'/>
+        </property>
+        <property name="checkAreaId" type="java.lang.Long">
+            <column name='"CHECKAREAID"'/>
+        </property>
+        <property name="flag" type="integer">
+            <column name='"FLAG"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+        <property name="tiaoMa" type="string">
+            <column name='"TIAOMA"'/>
+        </property>
+        <property name="rflag" type="integer">
+            <column name='"RFLAG"'/>
+        </property>
+        <property name="nodeId" type="string">
+            <column name='"NODEID"'/>
+        </property>
+        <property name="nodeDate" type="timestamp">
+            <column name='"NODEDATE"' length="23"/>
+        </property>
+        <property name="areaNumber" type="string">
+            <column name='"AREANUMBER"' length="8"/>
+        </property>
+        <property name="year" type="integer">
+            <column name='"YEAR"'/>
+        </property>
+        <property name="month" type="integer">
+            <column name='"MONTH"'/>
+        </property>
+        <property name="quarter" type="integer">
+            <column name='"QUARTER"'/>
+        </property>
+        <property name="designateType" type="string">
+            <column name='"DESIGNATETYPE"' length="1"/>
+        </property>
+        <property name="clyshCzr" type="string">
+            <column name='"CLYSHCZR"'/>
+        </property>
+        <property name="wsjl" type="string">
+            <column name='"WSJL"'/>
+        </property>
+        <property name="xcpsjl" type="string">
+            <column name='"XCPSJL"'/>
+        </property>
+        <property name="jhzt" type="string">
+            <column name='"JHZT"'/>
+        </property>
+        <property name="status" type="string">
+            <column name='"STATUS"'/>
+        </property>
+        <property name="bxflag" type="string">
+            <column name='"BXFLAG"'/>
+        </property>
+        <property name="gdDate" type="timestamp">
+            <column name='"GDDATE"' length="23"/>
+        </property>
+
+        <property name="isFirstOrOther" type="java.lang.String">
+            <column name='"ISFIRSTOROTHER"' length="50">
+                <comment>首次申请或检验检测项目设计强制性标准技术规范</comment>
+            </column>
+        </property>
+
+        <property name="zzch_reason" type="java.lang.String">
+            <column name='"ZZCH_REASON"' length="50">
+                <comment>自主撤回原因</comment>
+            </column>
+        </property>
+
+        <property name="zzch_date" type="timestamp">
+            <column name='"ZZCH_DATE"' length="23">
+                <comment>自主撤回时间</comment>
+            </column>
+        </property>
+
+        <property name="zzch_flag" type="java.lang.String">
+            <column name='"ZZCH_FLAG"' length="50" default="0">
+                <comment>自主撤回 数据 flag(1:自主撤回标识)</comment>
+            </column>
+        </property>
+
+        <property name="createUser" type="java.lang.String">
+            <column name='"CREATEUSER"' length="255">
+                <comment>操作用户</comment>
+            </column>
+        </property>
+        <property name="checkAreaName" type="java.lang.String">
+            <column name='"CHECKAREANAME"' length="255">
+                <comment>上报区域名称</comment>
+            </column>
+        </property>
+
+        <property name="zzch_isagree" type="java.lang.String">
+            <column name='"ZZCH_ISAGREE"' length="3000">
+                <comment>自主撤回 数据 意见</comment>
+            </column>
+        </property>
+
+        <property name="zzch_suggestion" type="java.lang.String">
+            <column name='"ZZCH_SUGGESTION"' length="3000">
+                <comment>自主撤回 数据 意见</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

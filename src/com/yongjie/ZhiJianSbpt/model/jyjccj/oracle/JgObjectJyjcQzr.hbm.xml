@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.jyjccj.JgObjectJyjcQzr" table='"JGOBJECT_JYJCQZR"'>
+        <id name="id" type="long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_JGOBJECT_JYJCQZR</param>
+            </generator>
+        </id>
+        <property name="qzrName" type="string">
+            <column name='"QZRNAME"'/>
+        </property>
+        <property name="zsbh" type="string">
+            <column name='"ZSBH"'/>
+        </property>
+        <property name="sex" type="string">
+            <column name='"SEX"' length="5"/>
+        </property>
+        <property name="birthday" type="timestamp">
+            <column name='"BIRTHDAY"' length="23"/>
+        </property>
+        <property name="zhiw" type="string">
+            <column name='"ZHIW"'/>
+        </property>
+        <property name="zhic" type="string">
+            <column name='"ZHIC"'/>
+        </property>
+        <property name="education" type="string">
+            <column name='"EDUCATION"'/>
+        </property>
+        <property name="dept" type="string">
+            <column name='"DEPT"'/>
+        </property>
+        <property name="fax" type="string">
+            <column name='"FAX"'/>
+        </property>
+        <property name="email" type="string">
+            <column name='"EMAIL"'/>
+        </property>
+        <property name="qzly" type="string">
+            <column name='"QZLY"'/>
+        </property>
+        <property name="telephone" type="string">
+            <column name='"TELEPHONE"'/>
+        </property>
+        <property name="bySchool" type="string">
+            <column name='"BYSCHOOL"'/>
+        </property>
+        <property name="zhuanye" type="string">
+            <column name='"ZHUANYE"'/>
+        </property>
+        <property name="peixun" type="string">
+            <column name='"PEIXUN"'/>
+        </property>
+        <property name="zgzs" type="string">
+            <column name='"ZGZS"'/>
+        </property>
+        <property name="gzjl" type="string">
+            <column name='"GZJL"'/>
+        </property>
+        <property name="xgsm" type="string">
+            <column name='"XGSM"'/>
+        </property>
+        <property name="zzjgdm" type="string">
+            <column name='"ZZJGDM"'/>
+        </property>
+        <property name="jgclassifyId" type="long">
+            <column name='"JGCLASSIFYID"'/>
+        </property>
+        <property name="sqsId" type="long">
+            <column name='"SQSID"'/>
+        </property>
+        <property name="jgstate" type="java.lang.Integer">
+            <column name='"JGSTATE"'/>
+        </property>
+        <property name="czr" type="string">
+            <column name='"CZR"'/>
+        </property>
+        <property name="cddz" type="string">
+            <column name='"CDDZ"'/>
+        </property>
+        <property name="sfzh" type="string">
+            <column name='"SFZH"'/>
+        </property>
+        <property name="qzrpj" type="string">
+            <column name='"QZRPJ"'/>
+        </property>
+        <property name="czdate" type="timestamp">
+            <column name='"CZDATE"' length="23"/>
+        </property>
+
+        <property name="pizhunDate" type="timestamp">
+            <column name='"PIZHUNDATE"' length="23"/>
+        </property>
+        <property name="cdid" type="java.lang.Integer">
+            <column name='"CDID"'/>
+        </property>
+        <property name="sporfspid" type="java.lang.Integer">
+            <column name='"SPORFSPID"'/>
+        </property>
+        <property name="paixu" type="java.lang.Double">
+            <column name='"PAIXU"'/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+        <property name="iszzpj" type="string">
+            <column name='"ISZZPJ"'/>
+        </property>
+        <property name="xueli" type="string">
+            <column name='"XUELI"'/>
+        </property>
+        <property name="khjg" type="string">
+            <column name='"KHJG"'/>
+        </property>
+        <property name="gzpxjl" type="string">
+            <column name='"GZPXJL"'/>
+        </property>
+        <property name="signImg" type="string">
+            <column name='"SIGNIMG"'/>
+        </property>
+
+        <property name="originalSignatureArea" type="string">
+            <column name="ORIGINALSIGNATUREAREA"/>
+        </property>
+
+        <property name="changeType" type="string">
+            <column name="CHANGETYPE"/>
+        </property>
+
+        <property name="deleteType" type="string">
+            <column name="DELETETYPE"/>
+        </property>
+        <property name="collectFujianId" type="long">
+            <column name='"COLLECTFUJIANID"'/>
+        </property>
+    </class>
+</hibernate-mapping>

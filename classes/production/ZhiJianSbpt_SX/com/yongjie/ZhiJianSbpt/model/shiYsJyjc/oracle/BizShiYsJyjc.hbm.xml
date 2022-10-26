@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.shiYsJyjc.BizShiYsJyjc" table='"BIZSHIYSJYJC"'>
+        <id name="id" type="long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_BIZSHIYSJYJC</param>
+            </generator>
+        </id>
+        <property name="bizId" type="java.lang.Long">
+            <column name='"BIZID"'/>
+        </property>
+        <property name="flowId" type="java.lang.Long">
+            <column name='"FLOWID"'/>
+        </property>
+        <property name="flowInstId" type="java.lang.Long">
+            <column name='"FLOWINSTID"'/>
+        </property>
+        <property name="sysMc" type="string">
+            <column name='"SYSMC"'/>
+        </property>
+        <property name="sysDz" type="string">
+            <column name='"SYSDZ"'/>
+        </property>
+        <property name="zzjgdm" type="string">
+            <column name='"ZZJGDM"'/>
+        </property>
+        <property name="sysEmail" type="string">
+            <column name='"SYSEMAIL"'/>
+        </property>
+        <property name="sysZip" type="string">
+            <column name='"SYSZIP"'/>
+        </property>
+        <property name="sysFax" type="string">
+            <column name='"SYSFAX"'/>
+        </property>
+        <property name="lxr" type="string">
+            <column name='"LXR"'/>
+        </property>
+        <property name="lxrDh" type="string">
+            <column name='"LXRDH"'/>
+        </property>
+        <property name="sqrq" type="timestamp">
+            <column name='"SQRQ"'/>
+        </property>
+        <property name="ssdate" type="timestamp">
+            <column name='"SSDATE"'/>
+        </property>
+        <property name="startPsDate" type="timestamp">
+            <column name='"STARTPSDATE"'/>
+        </property>
+        <property name="sqZylb" type="string">
+            <column name='"SQZYLB"' length="20"/>
+        </property>
+
+        <property name="sqlb" type="string">
+            <column name='"SQLB"' length="50"/>
+        </property>
+        <property name="zslx" type="string">
+            <column name='"ZSLX"'/>
+        </property>
+        <property name="isDcd" type="java.lang.Integer">
+            <column name='"ISDCD"'/>
+        </property>
+        <property name="flag" type="java.lang.Integer">
+            <column name='"FLAG"'/>
+        </property>
+        <property name="sbrq" type="timestamp">
+            <column name='"SBRQ"' length="23"/>
+        </property>
+        <property name="fzrq" type="timestamp">
+            <column name='"FZRQ"' length="23"/>
+        </property>
+        <property name="tiaoMa" type="string">
+            <column name='"TIAOMA"'/>
+        </property>
+        <property name="shRenAreaId" type="java.lang.Long">
+            <column name='"SHRENAREAID"'/>
+        </property>
+        <property name="zgdwdm" type="string">
+            <column name='"ZGDWDM"'/>
+        </property>
+        <property name="zgdwmc" type="string">
+            <column name='"ZGDWMC"' length="50"/>
+        </property>
+        <property name="cmaSqlx" type="string">
+            <column name='"CMASQLX"'/>
+        </property>
+        <property name="zzrdzsbh" type="string">
+            <column name='"ZZRDZSBH"'/>
+        </property>
+        <property name="isFoodType" type="string">
+            <column name='"ISFOODTYPE"'/>
+        </property>
+        <property name="zsyxrq" type="timestamp">
+            <column name='"ZSYXRQ"' length="23"/>
+        </property>
+        <property name="czr" type="string">
+            <column name='"CZR"' length="50"/>
+        </property>
+        <property name="czDate" type="timestamp">
+            <column name='"CZDATE"' length="23"/>
+        </property>
+        <property name="bjbh" type="string">
+            <column name='"BJBH"'/>
+        </property>
+        <property name="ysFinishTime" type="timestamp">
+            <column name='"YSFINISHTIME"' length="23"/>
+        </property>
+        <property name="isshangbao" type="string">
+            <column name='"ISSHANGBAO"'/>
+        </property>
+        <property name="isxz" type="string">
+            <column name='"ISXZ"'/>
+        </property>
+        <property name="isWs" type="string">
+            <column name='"ISWS"'/>
+        </property>
+        <property name="zzrdzsbhcal" type="string">
+            <column name='"ZZRDZSBHCAL"'/>
+        </property>
+        <property name="zsyxrqcal" type="timestamp">
+            <column name='"ZSYXRQCAL"' length="23"/>
+        </property>
+        <property name="sqType" type="java.lang.Integer">
+            <column name='"SQTYPE"'/>
+        </property>
+        <property name="receiveNum" type="string">
+            <column name="RECEIVENUM"/>
+        </property>
+        <property name="receivePassword" type="string">
+            <column name="RECEIVEPASSWORD"/>
+        </property>
+        <property name="receiveResult" type="string">
+            <column name="RECEIVERESULT"/>
+        </property>
+        <property name="yearHao" type="string">
+            <column name='"YEARHAO"'/>
+        </property>
+        <property name="year" type="string">
+            <column name='"YEAR"'/>
+        </property>
+        <property name="hao" type="string">
+            <column name='"HAO"'/>
+        </property>
+        <property name="nodeId" type="string">
+            <column name="NODEID"/>
+        </property>
+        <property name="nodeBlrq" type="timestamp">
+            <column name="NODEBLRQ"/>
+        </property>
+        <property name="psdate" type="timestamp">
+            <column name='"PSDATE"'/>
+        </property>
+        <property name="rflag" type="java.lang.Integer">
+            <column name='"RFLAG"'/>
+        </property>
+        <property name="psdateStr" type="string">
+            <column name="PSDATESTR"/>
+        </property>
+    </class>
+</hibernate-mapping>

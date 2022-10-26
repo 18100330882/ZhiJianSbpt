@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="jyjccj" extends="base" namespace="/">
+		<action name="collect_*" class="CollectAction" method="{1}">
+			<result name="collectList">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=collectList</result>
+			<result name="save">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=save</result>
+			<result name="sb">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=sb</result>
+			<result name="del">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=del</result>
+			<result name="delnl">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=delnl</result>
+			<result name="delqzr">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=delqzr</result>
+			<result name="delry">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=delry</result>
+			<result name="getNlFileList">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=getNlFileList</result>
+			<result name="getQzrFileList">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=getQzrFileList</result>
+			<result name="getRyFileList">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=getRyFileList</result>
+			<result name="queryByZsbh">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryByZsbh</result>
+			<result name="jgobjectSave">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=jgobjectSave</result>
+			<result name="queryByUserName">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryByUserName</result>
+			<result name="ckfj">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=ckfj</result>
+			<result name="cknl">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=cknl</result>
+			<result name="queryQzrBySfzh">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryQzrBySfzh</result>
+			<result name="queryRyBySfzh">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryRyBySfzh</result>
+			<result name="queryRyListByZsbh">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryRyListByZsbh</result>
+			<result name="checkFlagByZsbh">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=checkFlagByZsbh</result>
+			<result name="querySfzhByName">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=querySfzhByName</result>
+			<result name="queryQzrByZsbh">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryQzrByZsbh</result>
+			<result name="queryQzrSfzhByName">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryQzrSfzhByName
+			</result>
+			<result name="queryByUserName2">WEB-INF/jsp/jyjccj/CollectAjaxService.jsp?method=queryByUserName2
+			</result>
+		</action>
+	</package>
+</struts>

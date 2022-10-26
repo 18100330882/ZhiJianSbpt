@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="BizShiYsJyjcManager" extends="base" namespace="/">
+        <action name="bizshiysjyjc_*" class="BizShiYsJyjcAction" method="{1}">
+            <result name="getShiYsJyjcSqsToList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getShiYsJyjcSqsToList</result>
+            <result name="saveJyjc">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=saveJyjc</result>
+            <result name="getBizShiYsJyjcOrsqsId">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getBizShiYsJyjcOrsqsId</result>
+            <result name="getBizShiYsJyjcById">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getBizShiYsJyjcById</result>
+            <result name="delShiYsJyjcOrId">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=delShiYsJyjcOrId</result>
+            <result name="isCompleteBysqsId">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=isCompleteBysqsId</result>
+            <!-- 申请书状态更改 -->
+            <result name="submitSqs">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=submitSqs</result>
+            <result name="getShiYsJyjcListByCzr">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getShiYsJyjcListByCzr</result>
+            <result name="toCnsUpload">jsp/shiYsJyjcReport/JgCnsUpload.jsp</result>
+            <result name="updateBizShiYsJyjc">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=updateBizShiYsJyjc</result>
+            <result name="getShiysjyjcPremitByZsbh">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getShiysjyjcPremitByZsbh</result>
+            <result name="getShiysjyjcPremitByZsbh2">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getShiysjyjcPremitByZsbh2</result>
+            <result name="getIfInJyjcjgxxBuHeGe">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getIfInJyjcjgxxBuHeGe</result>
+            <result name="isCanSb">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=isCanSb</result>
+            <!--   查询上报部门 -->
+            <result name="getShangBaoBuMen">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getShangBaoBuMen</result>
+
+            <!--  终止评审 -->
+            <result name="zzpsAdd">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=zzpsAdd</result>
+            <result name="zzpsSelect">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=zzpsSelect</result>
+            <result name="zzpszsNumber">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=zzpszsNumber</result>
+            <result name="zzpstxaddress">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=zzpstxaddress</result>
+
+            <!--  申报端检验检测档案机构查询 -->
+            <result name="searchQyxxList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=searchQyxxList</result>
+            <result name="getJgObjectnewShxydm">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getJgObjectnewShxydm</result>
+            <result name="getSqsxxByShxydm">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getSqsxxByShxydm</result>
+            <result name="getCddzFromCd">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getCddzFromCd</result>
+            <result name="getZsxxList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getZsxxList</result>
+            <result name="getZylbList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getZylbList</result>
+            <result name="getJgObjectJyjcjgRyList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getJgObjectJyjcjgRyList</result>
+            <result name="getJgObjectQzrList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getJgObjectQzrList</result>
+            <result name="getJynlList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getJynlList</result>
+            <result name="getZsxxList2">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getZsxxList2</result>
+            <result name="getJdcXx">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getJdcXx</result>
+            <result name="getYqsbList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getYqsbList</result>
+            <result name="getJgObjectFuJianList">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getJgObjectFuJianList</result>
+            <result name="getJgObjectCd1">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getJgObjectCd1</result>
+
+            <!--  反馈信息 -->
+            <result name="getPsxx">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getPsxx</result>
+            <result name="addFkxx">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=addFkxx</result>
+            <result name="getFkxx">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getFkxx</result>
+            <result name="getPsry">WEB-INF/jsp/shiYsJyjcReport/BizShiYsJyjcAjaxService.jsp?method=getPsry</result>
+        </action>
+    </package>
+</struts>

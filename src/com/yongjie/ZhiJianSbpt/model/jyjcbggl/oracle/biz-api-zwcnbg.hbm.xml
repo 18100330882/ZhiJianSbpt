@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.jyjcbggl.BizApiZwcnBg" table='"BIZ_API_ZWCNBG"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_BIZ_API_ZWCNBG</param>
+            </generator>
+        </id>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"' length="36"/>
+        </property>
+        <property name="flag" type="string">
+            <column name='"FLAG"' length="2"/>
+        </property>
+        <property name="state" type="string">
+            <column name='"STATE"' length="2"/>
+        </property>
+        <property name="jgmc" type="string">
+            <column name='"JGMC"' length="100"/>
+        </property>
+        <property name="principal" type="string">
+            <column name='"PRINCIPAL"' length="50"/>
+        </property>
+        <property name="phone" type="string">
+            <column name='"PHONE"' length="22"/>
+        </property>
+        <property name="sqrq" type="timestamp">
+            <column name='"SQRQ"' length="23"/>
+        </property>
+        <property name="shxydm" type="string">
+            <column name='"SHXYDM"' length="22"/>
+        </property>
+        <property name="areaNumber" type="string">
+            <column name='"AREANUMBER"' length="8"/>
+        </property>
+        <property name="areaName" type="string">
+            <column name='"AREANAME"'/>
+        </property>
+        <property name="areaId" type="java.lang.Long">
+            <column name='"AREAID"'/>
+        </property>
+        <property name="checkAreaId" type="java.lang.Long">
+            <column name='"CHECKAREAID"'/>
+        </property>
+        <property name="flowId" type="java.lang.Long">
+            <column name='"FLOWID"'/>
+        </property>
+        <property name="flowInstId" type="java.lang.Long">
+            <column name='"FLOWINSTID"'/>
+        </property>
+        <property name="nodeId" type="string">
+            <column name='"NODEID"'/>
+        </property>
+        <property name="nodeDate" type="timestamp">
+            <column name='"NODEDATE"' length="23"/>
+        </property>
+        <property name="year" type="integer">
+            <column name='"YEAR"'/>
+        </property>
+        <property name="month" type="integer">
+            <column name='"MONTH"'/>
+        </property>
+        <property name="quarter" type="integer">
+            <column name='"QUARTER"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+        <property name="registerAdress" type="string">
+            <column name='"REGISTERADRESS"'/>
+        </property>
+        <property name="contactPerson" type="string">
+            <column name='"CONTACTPERSON"'/>
+        </property>
+        <property name="contactPosition" type="string">
+            <column name='"CONTACTPOSITION"'/>
+        </property>
+        <property name="contactTelephone" type="string">
+            <column name='"CONTACTTELEPHONE"'/>
+        </property>
+        <property name="contactPhone" type="string">
+            <column name='"CONTACTPHONE"'/>
+        </property>
+        <property name="cmaPermitNumber" type="string">
+            <column name='"CMAPERMITNUMBER"'/>
+        </property>
+        <property name="cmaPermitEffectiveDate" type="timestamp">
+            <column name='"CMAPERMITEFFECTIVEDATE"' length="23"/>
+        </property>
+        <property name="cmaDateoficcue" type="timestamp">
+            <column name='"CMADATEOFICCUE"' length="23"/>
+        </property>
+        <property name="rflag" type="integer">
+            <column name='"RFLAG"'/>
+        </property>
+        <property name="createUser" type="string">
+            <column name='"CREATEUSER"' length="255"/>
+        </property>
+
+        <property name="checkAreaName" type="string">
+            <column name='"CHECKAREANAME"' length="255"/>
+        </property>
+    </class>
+</hibernate-mapping>

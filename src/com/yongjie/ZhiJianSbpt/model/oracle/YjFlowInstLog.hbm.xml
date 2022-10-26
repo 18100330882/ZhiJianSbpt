@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-1 14:59:26 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.YjFlowInstLog" table='"YJFLOWINSTLOG"'>
+        <id name="id" type="long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_YJFLOWINSTLOG</param>
+            </generator>
+        </id>
+        <property name="flowInstId" type="java.lang.Long">
+            <column name='"FLOWINSTID"'/>
+        </property>
+        <property name="nodeInstId" type="java.lang.Long">
+            <column name='"NODEINSTID"'/>
+        </property>
+        <property name="operationName" type="string">
+            <column name='"OPERATIONNAME"'/>
+        </property>
+        <property name="operationMemo" type="string">
+            <column name='"OPERATIONMEMO"'/>
+        </property>
+        <property name="opType" type="java.lang.Integer">
+            <column name='"OPTYPE"'/>
+        </property>
+        <property name="suggestion" type="string">
+            <column name='"SUGGESTION"'/>
+        </property>
+        <property name="trueName" type="string">
+            <column name='"TRUENAME"'/>
+        </property>
+        <property name="caoR" type="string">
+            <column name='"CAOR"'/>
+        </property>
+        <property name="caoDate" type="timestamp">
+            <column name='"CAODATE"' length="23"/>
+        </property>
+        <property name="isAgree" type="string">
+            <column name='"ISAGREE"'/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"' length="36">
+                <comment>流水号</comment>
+            </column>
+        </property>
+        <property name="slYesOrNo" type="string">
+            <column name='"SLYESORNO"'>
+                <comment>准予受理0/不予受理1</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

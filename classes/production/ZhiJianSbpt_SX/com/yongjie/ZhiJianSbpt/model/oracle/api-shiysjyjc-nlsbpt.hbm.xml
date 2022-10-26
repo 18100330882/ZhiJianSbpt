@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ApiShiYsJyjcNlSbpt" table='"API_SHIYSJYJC_NLSBPT"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_API_SHIYSJYJC_NLSBPT</param>
+            </generator>
+        </id>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"' length="50"/>
+        </property>
+        <property name="siteName" type="string">
+            <column name='"SITENAME"'/>
+        </property>
+        <property name="bigNumber" type="string">
+            <column name='"BIGNUMBER"' length="10"/>
+        </property>
+        <property name="typeName" type="string">
+            <column name='"TYPENAME"' length="100"/>
+        </property>
+        <property name="sortingNumber" type="string">
+            <column name='"SORTINGNUMBER"' length="10"/>
+        </property>
+        <property name="sortNumber" type="string">
+            <column name='"SORTNUMBER"' length="10"/>
+        </property>
+        <property name="status" type="string">
+            <column name='"STATUS"' length="10"/>
+        </property>
+        <property name="productName" type="string">
+            <column name='"PRODUCTNAME"'/>
+        </property>
+        <property name="parameter" type="string">
+            <column name='"PARAMETER"'/>
+        </property>
+        <property name="standardName" type="string">
+            <column name='"STANDARDNAME"'/>
+        </property>
+        <property name="standardNo" type="string">
+            <column name='"STANDARDNO"'/>
+        </property>
+        <property name="limits" type="string">
+            <column name='"LIMITS"' length="500"/>
+        </property>
+        <property name="instructions" type="string">
+            <column name='"INSTRUCTIONS"'/>
+        </property>
+        <property name="unid" type="string">
+            <column name='"UNID"' length="50"/>
+        </property>
+        <property name="pid" type="string">
+            <column name='"PID"' length="50"/>
+        </property>
+        <property name="identifier" type="string">
+            <column name='"IDENTIFIER"'/>
+        </property>
+        <property name="catalogue" type="string">
+            <column name='"CATALOGUE"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+        <property name="yjfl" type="string">
+            <column name='"YJFL"'/>
+        </property>
+        <property name="ejfl" type="string">
+            <column name='"EJFL"'/>
+        </property>
+        <property name="sanjfl" type="string">
+            <column name='"SANJFL"'/>
+        </property>
+        <property name="sijfl" type="string">
+            <column name='"SIJFL"'/>
+        </property>
+        <property name="yjbz" type="string">
+            <column name='"YJBZ"'/>
+        </property>
+        <property name="pizhunDate" type="timestamp">
+            <column name='"PIZHUNDATE"' length="23"/>
+        </property>
+        <property name="zsbh" type="string">
+            <column name='"ZSBH"'/>
+        </property>
+        <property name="gsmc" type="string">
+            <column name='"GSMC"'/>
+        </property>
+        <property name="bzwzName" type="string">
+            <column name='"BZWZNAME"'/>
+        </property>
+        <property name="bzwzClfw" type="string">
+            <column name='"BZWZCLFW"'/>
+        </property>
+        <property name="syfs" type="string">
+            <column name='"SYFS"'/>
+        </property>
+        <property name="yqsbYxrq" type="timestamp">
+            <column name='"YQSBYXRQ"' length="23"/>
+        </property>
+        <property name="qrjg" type="string">
+            <column name='"QRJG"'/>
+        </property>
+        <property name="flag" type="string">
+            <column name='"FLAG"'/>
+        </property>
+        <property name="remark" type="string">
+            <column name='"REMARK"' length="3000"/>
+        </property>
+    </class>
+</hibernate-mapping>

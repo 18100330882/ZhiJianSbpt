@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.jyjcJgzx.BizApiZxsqb" table="BIZ_API_ZXSQB" >
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native">
+                <param name="sequence">SEQ_BIZ_API_ZXSQB</param>
+            </generator>
+        </id>
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER" length="255"/>
+        </property>
+        <property name="organizationName" type="string">
+            <column name="ORGANIZATIONNAME" length="255"  />
+        </property>
+        <property name="organizationDate" type="timestamp">
+            <column name="ORGANIZATIONDATE" length="255"  />
+        </property>
+        <property name="organizationAddress" type="string">
+            <column name="ORGANIZATIONADDRESS" length="255"  />
+        </property>
+        <property name="certificateNumber" type="string">
+            <column name="CERTIFICATENUMBER" length="255"  />
+        </property>
+        <property name="startDate" type="timestamp">
+            <column name="STARTDATE" length="255" />
+        </property>
+        <property name="endDate" type="timestamp">
+            <column name="ENDDATE" length="255" />
+        </property>
+        <property name="contacts" type="string">
+            <column name="CONTACTS" length="255" />
+        </property>
+        <property name="contactsPhone" type="string">
+            <column name="CONTACTSPHONE" length="255" />
+        </property>
+        <property name="unitPeople" type="string">
+            <column name="UNITPEOPLE" length="255" />
+        </property>
+        <property name="unitPhone" type="string">
+            <column name="UNITPHONE" length="255" />
+        </property>
+        <property name="cancelReason" type="string">
+            <column name="CANCELREASON" length="255" />
+        </property>
+        <property name="cancelDate" type="timestamp">
+            <column name="CANCELDATE" length="255" />
+        </property>
+        <property name="checkOpinion" type="string">
+            <column name="CHECKOPINION" length="255" />
+        </property>
+        <property name="checkDate" type="timestamp">
+            <column name="CHECKDATE" length="255" />
+        </property>
+        <property name="spbmOpinion" type="string">
+            <column name="SPBMOPINION" length="255" />
+        </property>
+        <property name="spbmDate" type="timestamp">
+            <column name="SPBMDATE" length="255" />
+        </property>
+        <property name="sqrq" type="timestamp">
+            <column name="SQRQ" length="255" />
+        </property>
+        <property name="flag" type="string">
+            <column name='"FLAG"' length="2"/>
+        </property>
+        <property name="shxydm" type="string">
+            <column name='"SHXYDM"' length="22"/>
+        </property>
+        <property name="areaNumber" type="string">
+            <column name='"AREANUMBER"' length="8"/>
+        </property>
+        <property name="areaName" type="string">
+            <column name='"AREANAME"'/>
+        </property>
+        <property name="areaId" type="java.lang.Long">
+            <column name='"AREAID"' />
+        </property>
+        <property name="checkAreaId" type="java.lang.Long">
+            <column name='"CHECKAREAID"' />
+        </property>
+        <property name="flowId" type="java.lang.Long">
+            <column name='"FLOWID"' />
+        </property>
+        <property name="flowInstId" type="java.lang.Long">
+            <column name='"FLOWINSTID"' />
+        </property>
+        <property name="nodeId" type="string">
+            <column name='"NODEID"'/>
+        </property>
+        <property name="nodeDate" type="timestamp">
+            <column name='"NODEDATE"' length="23"/>
+        </property>
+        <property name="year" type="integer">
+            <column name='"YEAR"'/>
+        </property>
+        <property name="month" type="integer">
+            <column name='"MONTH"'/>
+        </property>
+        <property name="quarter" type="integer">
+            <column name='"QUARTER"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23" />
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23" />
+        </property>
+        <property name="rflag" type="integer">
+            <column name='"RFLAG"'/>
+        </property>
+        <property name="createUser" type="string">
+            <column name='"CREATEUSER"' length="255"/>
+        </property>
+        <property name="checkAreaName" type="string">
+            <column name='"CHECKAREANAME"' length="255"/>
+        </property>
+    </class>
+</hibernate-mapping>

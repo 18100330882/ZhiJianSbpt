@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-1 17:44:25 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ShiYsJyjcFuJian" table='"SHIYSJYJCFUJIAN"'>
+        <id name="id" type="long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_SHIYSJYJCFUJIAN</param>
+            </generator>
+        </id>
+        <property name="sqsId" type="long">
+            <column name='"SQSID"' not-null="true"/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+        <property name="fileTypeId" type="string">
+            <column name='"FILETYPEID"'/>
+        </property>
+        <property name="fileTitle" type="string">
+            <column name='"FILETITLE"'/>
+        </property>
+        <property name="fileExtension" type="string">
+            <column name='"FILEEXTENSION"'/>
+        </property>
+        <property name="fileSize" type="string">
+            <column name='"FILESIZE"' length="30"/>
+        </property>
+        <property name="filePath" type="string">
+            <column name='"FILEPATH"'/>
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name='"TYPE"'/>
+        </property>
+        <property name="czr" type="string">
+            <column name='"CZR"'/>
+        </property>
+        <property name="isSave" type="string">
+            <column name='"ISSAVE"'/>
+        </property>
+        <property name="cdId" type="string">
+            <column name='"CDID"'/>
+        </property>
+        <property name="filePathXchc" type="string">
+            <column name='"FILEPATHXCHC"'/>
+        </property>
+        <property name="filePathWord" type="string">
+            <column name='"FILEPATHWORD"'/>
+        </property>
+        <property name="czDate" type="timestamp">
+            <column name='"CZDATE"' length="23"/>
+        </property>
+        <property name="calOrCma" type="string">
+            <column name='"CALORCMA"'/>
+        </property>
+    </class>
+</hibernate-mapping>

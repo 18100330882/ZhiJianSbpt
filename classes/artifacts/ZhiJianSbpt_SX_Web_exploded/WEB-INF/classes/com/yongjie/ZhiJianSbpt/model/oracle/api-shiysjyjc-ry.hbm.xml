@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ApiShiYsJyjcRy" table='"API_SHIYSJYJC_RY"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_API_SHIYSJYJC_RY</param>
+            </generator>
+        </id>
+        <property name="name" type="string">
+            <column name='"NAME"'/>
+        </property>
+        <property name="sex" type="string">
+            <column name='"SEX"'/>
+        </property>
+        <property name="age" type="integer">
+            <column name='"AGE"'/>
+        </property>
+        <property name="education" type="string">
+            <column name='"EDUCATION"'/>
+        </property>
+        <property name="idCard" type="string">
+            <column name='"IDCARD"'/>
+        </property>
+        <property name="position" type="string">
+            <column name='"POSITION"'/>
+        </property>
+        <property name="jobTitle" type="string">
+            <column name='"JOBTITLE"'/>
+        </property>
+        <property name="professional" type="string">
+            <column name='"PROFESSIONAL"'/>
+        </property>
+        <property name="technicalFieldYear" type="string">
+            <column name='"TECHNICALFIELDYEAR"'/>
+        </property>
+        <property name="department" type="string">
+            <column name='"DEPARTMENT"'/>
+        </property>
+        <property name="address" type="string">
+            <column name='"ADDRESS"'/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+        <property name="unid" type="string">
+            <column name='"UNID"' length="36"/>
+        </property>
+        <property name="documentType" type="string">
+            <column name='"DOCUMENTTYPE"' length="36"/>
+        </property>
+        <property name="EducationZM" type="string">
+            <column name='"EDUCATIONZM"'/>
+        </property>
+        <property name="jgmc" type="string">
+            <column name='"JGMC"'/>
+        </property>
+        <property name="fileType" type="string">
+            <column name='"FILETYPE"'/>
+        </property>
+        <property name="fileTypeName" type="string">
+            <column name='"FILETYPENAME"'/>
+        </property>
+        <property name="localFilePath" type="string">
+            <column name='"LOCALFILEPATH"'/>
+        </property>
+    </class>
+</hibernate-mapping>

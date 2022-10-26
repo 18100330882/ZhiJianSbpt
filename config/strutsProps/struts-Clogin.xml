@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="CloginManager" extends="base" namespace="/">
+        <action name="login_*" class="CloginAction" method="{1}">
+        </action>
+
+        <action name="mainFrame_*" class="MainFrameAction" method="{1}">
+            <result name="getMenus">WEB-INF/jsp/sysBase/MainFrameAjaxService.jsp?method=getMenus</result>
+            <result name="getMenus8">WEB-INF/jsp/sysBase/MainFrameAjaxService.jsp?method=getMenus8</result>
+        </action>
+    </package>
+</struts>
+ 

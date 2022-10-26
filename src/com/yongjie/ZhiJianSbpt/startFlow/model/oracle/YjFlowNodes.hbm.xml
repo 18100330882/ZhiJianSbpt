@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.startFlow.model.YjFlowNodes" table='"YJFLOWNODES"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_YJFLOWNODES</param>
+            </generator>
+        </id>
+        <property name="nodeId" type="string">
+            <column name='"NODEID"'/>
+        </property>
+        <property name="flowId" type="java.lang.Long">
+            <column name='"FLOWID"'/>
+        </property>
+        <property name="nodeMc" type="string">
+            <column name='"NODEMC"'/>
+        </property>
+        <property name="nodeWeight" type="java.lang.Long">
+            <column name='"NODEWEIGHT"'/>
+        </property>
+        <property name="timeLimit" type="float">
+            <column name='"TIMELIMIT"'/>
+        </property>
+        <property name="participantType" type="java.lang.Integer">
+            <column name='"PARTICIPANTTYPE"'/>
+        </property>
+        <property name="participant" type="string">
+            <column name='"PARTICIPANT"'/>
+        </property>
+        <property name="startOrEnd" type="java.lang.Integer">
+            <column name='"STARTOREND"'/>
+        </property>
+        <property name="isHuiQian" type="java.lang.Integer">
+            <column name='"ISHUIQIAN"'/>
+        </property>
+        <property name="isAreaFilter" type="java.lang.Integer">
+            <column name='"ISAREAFILTER"'/>
+        </property>
+        <property name="xdksrqSql" type="string">
+            <column name='"XDKSRQSQL"'/>
+        </property>
+        <property name="caoR" type="string">
+            <column name='"CAOR"'/>
+        </property>
+        <property name="caoDate" type="timestamp">
+            <column name='"CAODATE"'/>
+        </property>
+        <property name="isEnable" type="java.lang.Integer">
+            <column name='"ISENABLE"'/>
+        </property>
+    </class>
+</hibernate-mapping>

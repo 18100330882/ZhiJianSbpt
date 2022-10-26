@@ -1,0 +1,36 @@
+//async:false 关闭ajax异步交互，开启ajax同步交互；同步交互便于控制顺序，达成逻辑的实现。
+function isRightCode(){   
+       	var verycode = nui.get("#veryCode");//nui拿到控件对象
+           //var code = $("#veryCode").attr("value");     
+           code = "c=" + verycode.value;    
+           $.ajax({     
+               type:"POST",     
+               url:"<%=basePath%>ResultServlet",     
+               data:code,  
+               async:false, 
+               success:callback  
+           });     
+       }  
+       //回调方法callback   
+        function callback(data){  
+	       	dataR = data.length;
+	       	alert("abc" + dataR);
+	       	if(data.length>0){//data不为空说明有提示语句 故要结束方法 
+	           $("#info").html(data);
+	           return;//这儿加上return 不知道对不对 原意是让没通过验证码的重新输入 
+	       	} 
+       } 
+ 二.简单动画效果
+    nui.alert("新注册的账号需激活,请拨打4006371070-803或814激活账号","提醒",function(){
+	                    	 nui.loading("注册成功，正在跳转登录页面","注册成功");
+	                         setTimeout(function(){
+	                            window.location = "<%=basePath%>Login.jsp";//注册成功后转到登录页面
+	                          },2000);
+    });
+ 三.扩充javascript原型方法
+ //扩充原型方法
+String.prototype.getQueryString = function(name){
+		          var reg = new RegExp("(^|&|\\?)"+ name +"=([^&]*)(&|$)"), r;
+		          if (r=this.match(reg)) return unescape(r[2]); return null;
+		        };
+var cpName = location.search.getQueryString("cpmc");

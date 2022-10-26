@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+ul li img {
+    float: left;
+}
+
+ul li {
+    width: 700px;
+    height: 25px;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+}
+
+li a {
+    display: block;
+    float: left;
+    word-wrap: nowrap;
+    margin-left: 5px;
+    margin-top: 2px;
+    text-decoration: none;
+    color: #000;
+}
+
+.UserButtonStyle {
+    width: 93%;
+    height: 60px;
+    /* height: 90%; */
+    text-align: left;
+    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    clear: both;
+}
+
+.msg {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    clear: both;
+}
+
+a {
+    margin-right: 25px;
+    margin-top: 15px;
+}

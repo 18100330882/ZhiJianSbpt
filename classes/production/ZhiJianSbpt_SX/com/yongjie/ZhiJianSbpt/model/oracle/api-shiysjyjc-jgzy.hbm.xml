@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ApiShiYsJyjcJgzy" table='"API_SHIYSJYJC_JGZY"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_API_SHIYSJYJC_JGZY</param>
+            </generator>
+        </id>
+        <property name="allNumber" type="java.lang.Integer">
+            <column name='"ALLNUMBER"'/>
+        </property>
+
+        <property name="hJobTitleNumber" type="java.lang.Integer">
+            <column name='"HJOBTITLENUMBER"'/>
+        </property>
+
+        <property name="hRatioAll" type="string">
+            <column name='"HRATIOALL"'/>
+        </property>
+
+        <property name="mJobTitleNumber" type="java.lang.Integer">
+            <column name='"MJOBTITLENUMBER"'/>
+        </property>
+        <property name="mRatioAll" type="string">
+            <column name='"MRATIOALL"'/>
+        </property>
+
+        <property name="pJobTitleNumber" type="java.lang.Integer">
+            <column name='"PJOBTITLENUMBER"'/>
+        </property>
+        <property name="pRatioAll" type="string">
+            <column name='"PRATIOALL"'/>
+        </property>
+
+        <property name="otherNumber" type="java.lang.Integer">
+            <column name='"OTHERNUMBER"'/>
+        </property>
+        <property name="oRatioAll" type="string">
+            <column name='"ORATIOALL"'/>
+        </property>
+        <property name="fixedAssets" type="string">
+            <column name='"FIXEDASSETS"'/>
+        </property>
+        <property name="equipmentNumber" type="java.lang.Integer">
+            <column name='"EQUIPMENTNUMBER"'/>
+        </property>
+        <property name="propertyRights" type="string">
+            <column name='"PROPERTYRIGHTS"'/>
+        </property>
+        <property name="propertyRightsValue" type="string">
+            <column name='"PROPERTYRIGHTSVALUE"'/>
+        </property>
+        <property name="institutionsArea" type="string">
+            <column name='"INSTITUTIONSAREA"'/>
+        </property>
+        <property name="siteArea" type="string">
+            <column name='"SITEAREA"'/>
+        </property>
+        <property name="outdoorsiteArea" type="string">
+            <column name='"OUTDOORSITEAREA"'/>
+        </property>
+        <property name="whArea" type="string">
+            <column name='"WHAREA"'/>
+        </property>
+        <property name="sitePropertyRights" type="string">
+            <column name='"SITEPROPERTYRIGHTS"'/>
+        </property>
+        <property name="sitePropertyRightsValue" type="string">
+            <column name='"SITEPROPERTYRIGHTSVALUE"'/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+    </class>
+</hibernate-mapping>

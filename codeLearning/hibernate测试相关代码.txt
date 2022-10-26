@@ -1,0 +1,80 @@
+/**
+ * @author 黄煜豪
+ * @Createtime 2016年7月1日
+ * @description 测试book之hibernate。
+ */
+package junit;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.junit.Test;
+import org.springframework.orm.toplink.SessionBrokerSessionFactory;
+
+import com.yongjie.FoodXzsp.model.Book;
+
+public class TestBookHibernate {
+	//添加操作，需要开启事务
+	@Test
+	public void testAddBook(){
+		Session session = new Configuration().configure().buildSessionFactory().openSession();
+//		Book book = new Book();
+//		book.setAuthor("黄煜豪");
+//		book.setBookIntro("一本好书");
+//		book.setBookName("爱在西元前");
+//		book.setBookPrice(BigDecimal.valueOf(19.2));
+//		book.setRepertorySize(10l);
+		long time1 = System.currentTimeMillis();
+		System.out.println(System.currentTimeMillis());
+		//使用getTransaction（）获取事务
+		Transaction transaction = session.getTransaction();
+//		transaction.begin();
+		for(int i=0; i<3; i++){//循环加入多条数据
+			transaction.begin();
+			Book book1 = new Book();
+			book1.setAuthor("黄煜豪");
+			book1.setBookIntro("一本好书");
+			book1.setBookName("月落花开");
+			book1.setBookPrice(BigDecimal.valueOf(19.2));
+			book1.setRepertorySize(10l);
+			session.save(book1);
+			transaction.commit();
+		}
+//		transaction.commit();
+		System.out.println(System.currentTimeMillis()-time1);
+	}
+	//查询时，可以设置为read-only
+	@Test
+	public void testGetBookAll(){
+		Session session = new Configuration().configure().buildSessionFactory().openSession();
+		@SuppressWarnings("unchecked")
+		ArrayList<Book> books = (ArrayList<Book>) session.createQuery("From Book a where a.id<100").list();
+		System.out.println(Arrays.toString(books.toArray()));
+//		System.out.println(books.size());
+	}
+	//更新时，需要开启事物，而且允许读写
+	@Test
+	public void testUpdateBook() {
+		Session session = new Configuration().configure().buildSessionFactory().openSession();
+		Transaction transaction = session.getTransaction();
+		transaction.begin();
+		Book book = (Book) session.get(Book.class, 1l);
+		book.setAuthor("黄煜豪");
+		book.setBookName("春风晓月");
+		session.saveOrUpdate(book);
+		transaction.commit();
+	}
+	@Test
+	public void deleteBook(){
+		Session session = new Configuration().configure().buildSessionFactory().openSession();
+		Transaction transaction = session.getTransaction();
+		transaction.begin();
+		Book book = (Book) session.get(Book.class, 1l);
+		session.delete(book);
+		transaction.commit();
+	}
+}

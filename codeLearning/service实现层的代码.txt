@@ -1,0 +1,21 @@
+//添加事务读写主键
+@Transactional(isolation=Isolation.DEFAULT,propagation=Propagation.REQUIRED,readOnly=false)
+	@Override
+	public void saveBook(Book book) {
+		// TODO Auto-generated method stub
+		bookdao.save(book);
+	}
+	
+	
+	@Transactional(isolation=Isolation.DEFAULT,propagation=Propagation.REQUIRED,readOnly=false)
+	@Override
+	public void delBook(long bookID) {
+		bookdao.delete(bookID);
+	}
+	
+	@Transactional(isolation=Isolation.DEFAULT,propagation=Propagation.REQUIRED,readOnly=false)
+	@Override
+	public void updateBook(Book book) {
+		// TODO Auto-generated method stub
+		bookdao.update(book);
+	}

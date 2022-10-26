@@ -1,0 +1,16 @@
+<!-- 一个简单的action的写法  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="BookManager" extends="base" namespace="/">
+		<action name="book_*" class="BookAction"
+			method="{1}">
+			<result name="getBooks">WEB-INF/jsp/BookAjaxService.jsp?method=getBooks</result>
+			<result name="addBook">jsp/Book/BookWindow.jsp</result>
+			<result name="removeBooks">WEB-INF/jsp/BookAjaxService.jsp?method=removeBooks</result>
+			<result name="saveBook">WEB-INF/jsp/BookAjaxService.jsp?method=saveBook</result>
+		</action>
+	</package>
+</struts>

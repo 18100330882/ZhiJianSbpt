@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+body{padding:0px;margin:0px;font-size:14px;background:url(../images/dl_bg.jpg) repeat-x #1765af;font-family:'微软雅黑','Arial';font-size:14px;}
+#dl_con{width:1024px;height:465px;background:url(../images/dl_mbg.png);margin:0 auto;}
+#dl_nr{width:790px;height:80px;margin:0 auto;padding-top:290px;background:url(../images/con_bg.png) bottom repeat-x;}
+.text_con{width:250px;height:34px;float:left;margin-top:25px;}
+.text_box{width:170px;height:32px;line-height:32px;padding:0 10px;border:1px solid #7ba8d1;border-left:0px;float:left}
+.user_ico{width:33px;height:34px;float:left;}
+.btn_dl{width:60px;height:32px;background:#42caf1;font-family:'微软雅黑';color:#fff;float:left;border:0px;margin-top:25px;margin-right:20px;}
+.btn_zc{width:60px;height:32px;background:#0f6890;font-family:'微软雅黑';color:#fff;float:left;border:0px;margin-top:25px;}
+.dl_bot{padding-top:40px;text-align:center;color:#96bcdf;}

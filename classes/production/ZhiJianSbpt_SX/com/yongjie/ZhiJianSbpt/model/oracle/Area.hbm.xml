@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.Area" table='"AREA"' >
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"' />
+             <generator class="native">
+                <param name="sequence">SEQ_AREA</param>
+            </generator>
+        </id>
+        <property name="areaName" type="string">
+            <column name='"AREANAME"' not-null="true" />
+        </property>
+        <property name="areaNumber" type="string">
+            <column name='"AREANUMBER"' not-null="true" />
+        </property>
+        <property name="zoomLevel" type="java.lang.Integer">
+            <column name='"ZOOMLEVEL"' />
+        </property>
+        <property name="abbreviation" type="string">
+            <column name='"ABBREVIATION"' />
+        </property>
+        <property name="longitude" type="string">
+            <column name='"LONGITUDE"' />
+        </property>
+        <property name="latitude" type="string">
+            <column name='"LATITUDE"' />
+        </property>
+        <property name="parentId" type="java.lang.Long">
+            <column name='"PARENTID"' not-null="true" />
+        </property>
+        <property name="parentPath" type="string">
+            <column name='"PARENTPATH"' length="100" not-null="true" />
+        </property>
+        <property name="depth" type="int">
+            <column name='"DEPTH"' not-null="true" />
+        </property>
+        <property name="paiXu" type="int">
+            <column name='"PAIXU"' not-null="true" />
+        </property>
+        <property name="isEnabled" type="int">
+            <column name='"ISENABLED"' not-null="true" />
+        </property>
+        <property name="caoR" type="string">
+            <column name='"CAOR"' length="50" not-null="true" />
+        </property>
+        <property name="caoDate" type="timestamp">
+            <column name='"CAODATE"' length="23" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

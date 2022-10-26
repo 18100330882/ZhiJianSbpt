@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-8-10 14:53:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.bggl.model.PersonChangeDetails" table="PERSONCHANGEDETAILS">
+        <id name="id" type="long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_PERSONCHANGEDETAILS</param>
+            </generator>
+        </id>
+
+        <property name="changeType" type="string">
+            <column name="CHANGETYPE"/>
+        </property>
+        <property name="jyjcryId" type="java.lang.Long">
+            <column name="JYJCRYID"/>
+        </property>
+
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER"/>
+        </property>
+
+        <property name="name" type="string">
+            <column name="NAME"/>
+        </property>
+        <property name="nameAfter" type="string">
+            <column name="NAMEAFTER"/>
+        </property>
+
+        <property name="zsbh" type="string">
+            <column name="ZSBH"/>
+        </property>
+
+        <property name="sex" type="string">
+            <column name="SEX"/>
+        </property>
+
+        <property name="age" type="integer">
+            <column name="AGE"/>
+        </property>
+        <property name="education" type="string">
+            <column name="EDUCATION"/>
+        </property>
+        <property name="zhic" type="string">
+            <column name="ZHIC"/>
+        </property>
+        <property name="zhiw" type="string">
+            <column name="ZHIW"/>
+        </property>
+        <property name="zhuanye" type="string">
+            <column name="ZHUANYE"/>
+        </property>
+        <property name="yearOfService" type="string">
+            <column name="YEAROFSERVICE"/>
+        </property>
+        <property name="telephone" type="string">
+            <column name="TELEPHONE"/>
+        </property>
+        <property name="dept" type="string">
+            <column name="DEPT"/>
+        </property>
+        <property name="sfzh" type="string">
+            <column name="SFZH"/>
+        </property>
+        <property name="sfzhAfter" type="string">
+            <column name="SFZHAFTER"/>
+        </property>
+        <property name="cardType" type="string">
+            <column name="CARDTYPE"/>
+        </property>
+        <property name="flag" type="string">
+            <column name="FLAG"/>
+        </property>
+
+        <property name="jgAddress" type="string">
+            <column name="JGADDRESS"/>
+        </property>
+
+        <property name="moreAddress" type="string">
+            <column name="MOREADDRESS"/>
+        </property>
+
+        <property name="createDate" type="timestamp">
+            <column name="CREATEDATE"/>
+        </property>
+
+        <property name="updateDate" type="timestamp">
+            <column name="UPDATEDATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

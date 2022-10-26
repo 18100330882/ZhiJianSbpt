@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.jyjccj.JgObjectJyjcnl" table="JGOBJECT_JYJCNL" >
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="native">
+            	<param name="sequence">SEQ_JGOBJECT_JYJCNL</param>
+			</generator>
+        </id>
+        <property name="leib" type="string">
+            <column name="LEIB" />
+        </property>
+        <property name="cid" type="long">
+            <column name="CID" />
+        </property>
+        <property name="cpxh" type="string">
+            <column name="CPXH" />
+        </property>
+        <property name="cpmc" type="string">
+            <column name="CPMC" />
+        </property>
+        <property name="sanji" type="string">
+            <column name="SANJI" />
+        </property>
+        <property name="yjbzmc" type="string">
+            <column name="YJBZMC" />
+        </property>
+        <property name="xzfw" type="string">
+            <column name="XZFW"/>
+        </property>
+        <property name="sm" type="string">
+            <column name="SM" />
+        </property>
+        <property name="flag" type="string">
+            <column name="FLAG" />
+        </property>
+        <property name="yqsbmc" type="string">
+            <column name='"YQSBMC"' />
+        </property>
+        <property name="yqsbxh" type="string">
+            <column name='"YQSBXH"' />
+        </property>
+        <property name="yqsbclfw" type="string">
+            <column name='"YQSBCLFW"' />
+        </property>
+        <property name="zzrdZsbh" type="string">
+            <column name='"ZZRDZSBH"' />
+        </property>
+        <property name="syfs" type="string">
+            <column name='"SYFS"' />
+        </property>
+        <property name="yxrq" type="string">
+            <column name='"YXRQ"' />
+        </property>
+        <property name="qrjg" type="string">
+            <column name='"QRJG"' />
+        </property>
+        <property name="type" type="java.lang.Long">
+            <column name="type"  />
+        </property>
+        <property name="dxuhao" type="string">
+            <column name="DXUHAO"/>
+        </property>
+        <property name="zzjgdm" type="string">
+            <column name="ZZJGDM"/>
+        </property>
+         <property name="jgclassifyid" type="java.lang.Long">
+            <column name="JGCLASSIFYID"  />
+        </property>
+         <property name="sqsId" type="java.lang.Long">
+            <column name='"SQSID"' />
+        </property>
+        <property name="jgstate" type="java.lang.Long">
+            <column name='"JGSTATE"' />
+        </property>
+        <property name="parentId" type="string">
+            <column name="PARENTID"  />
+        </property>
+        <property name="czr" type="string">
+            <column name="CZR"  />
+        </property>
+        <property name="sortNum" type="string">
+            <column name="SORTNUM"  />
+        </property>
+		<property name="czDate" type="timestamp">
+            <column name="CZDATE"/>
+        </property>
+        <property name="pizhunDate" type="timestamp">
+            <column name="PIZHUNDATE"/>
+        </property>
+        <property name="diZhi" type="string">
+            <column name="DIZHI"/>
+        </property>
+        <property name="fuJianId" type="string">
+            <column name="FUJIANID"/>
+        </property>
+        <property name="beizhu" type="string">
+            <column name="BEIZHU"/>
+        </property>
+         <property name="calOrCma" type="string">
+            <column name="CALORCMA"/>
+        </property>
+         <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER"/>
+        </property>
+         <property name="cpleib" type="string">
+            <column name="CPLEIB"/>
+        </property>
+        <property name="identifier" type="string">
+            <column name="IDENTIFIER"/>
+        </property>
+        <property name="catalogue" type="string">
+            <column name="CATALOGUE"/>
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS"/>
+        </property>
+        <property name="isSp" type="string">
+            <column name='"ISSP"'/>
+        </property>
+        <property name="collectFujianId" type="long">
+            <column name='"COLLECTFUJIANID"'/>
+        </property>
+
+    </class>
+</hibernate-mapping>

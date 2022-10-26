@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-8-10 14:53:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.bggl.model.StandardChangeDetails" table="STANDARDCHANGEDETAILS">
+        <id name="id" type="long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_STANDARDCHANGEDETAILS</param>
+            </generator>
+        </id>
+
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER"/>
+        </property>
+
+        <property name="sortNum" type="string">
+            <column name="SORTNUM"/>
+        </property>
+
+        <property name="category" type="string">
+            <column name="CATEGORY"/>
+        </property>
+
+        <property name="standardNameAndNumOld" type="string">
+            <column name="STANDARDNAMEANDNUMOLD" length="3000"/>
+        </property>
+
+        <property name="standardNameAndNumNew" type="string">
+            <column name="STANDARDNAMEANDNUMNEW" length="3000"/>
+        </property>
+
+        <property name="changeContent" type="string">
+            <column name="CHANGECONTENT"/>
+        </property>
+
+        <property name="createDate" type="timestamp">
+            <column name="CREATEDATE"/>
+        </property>
+
+        <property name="updateDate" type="timestamp">
+            <column name="UPDATEDATE"/>
+        </property>
+
+        <property name="sortNumbg" type="string">
+            <column name="SORTNUMBG"/>
+        </property>
+
+        <property name="zsbh" type="string">
+            <column name="ZSBH"/>
+        </property>
+
+        <property name="jgobjectnlId" type="java.lang.Long">
+            <column name="JGOBJECTNLID"/>
+        </property>
+
+        <property name="limitRange" type="string">
+            <column name="LIMITRANGE"/>
+        </property>
+    </class>
+</hibernate-mapping>

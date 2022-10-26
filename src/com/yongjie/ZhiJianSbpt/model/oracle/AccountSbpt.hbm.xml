@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-8-10 14:53:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.AccountSbpt" table="ACCOUNTSBPT">
+        <id name="id" type="long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_ACCOUNTSBPT</param>
+            </generator>
+        </id>
+        <property name="userName" type="string">
+            <column name="USERNAME" not-null="true"/>
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" not-null="true"/>
+        </property>
+        <property name="flag" type="int">
+            <column name="FLAG"/>
+        </property>
+        <property name="qymc" type="string">
+            <column name="QYMC"/>
+        </property>
+        <property name="zcdz" type="string">
+            <column name="ZCDZ"/>
+        </property>
+        <property name="areaId" type="int">
+            <column name="AREAID"/>
+        </property>
+        <property name="zzjgdm" type="string">
+            <column name="ZZJGDM"/>
+        </property>
+        <property name="fddbr" type="string">
+            <column name="FDDBR"/>
+        </property>
+        <property name="fddbrdh" type="string">
+            <column name="FDDBRDH" length="50"/>
+        </property>
+        <property name="lxr" type="string">
+            <column name="LXR"/>
+        </property>
+        <property name="lxdh" type="string">
+            <column name="LXDH" length="50"/>
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL"/>
+        </property>
+        <property name="yzbm" type="string">
+            <column name="YZBM" length="10"/>
+        </property>
+        <property name="isAction" type="int">
+            <column name="ISACTION"/>
+        </property>
+        <property name="caoDate" type="timestamp">
+            <column name="CAODATE" length="23"/>
+        </property>
+        <property name="userId" type="string">
+            <column name="USERID" length="50"/>
+        </property>
+        <property name="isDlf" type="int">
+            <column name="ISDLF"/>
+        </property>
+        <property name="newShxydm" type="string">
+            <column name="NEWSHXYDM"/>
+        </property>
+        <property name="sfbs" type="int">
+            <column name='"SFBS"'/>
+        </property>
+        <property name="wsXzqh" type="string">
+            <column name='"WSXZQH"'/>
+        </property>
+    </class>
+</hibernate-mapping>

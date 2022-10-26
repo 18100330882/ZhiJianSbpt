@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ApiShiYsJyjcQzr" table='"API_SHIYSJYJC_QZR"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_API_SHIYSJYJC_QZR</param>
+            </generator>
+        </id>
+        <property name="address" type="string">
+            <column name='"ADDRESS"'/>
+        </property>
+        <property name="peopleType" type="string">
+            <column name='"PEOPLETYPE"'/>
+        </property>
+        <property name="name" type="string">
+            <column name='"NAME"'/>
+        </property>
+        <property name="sex" type="string">
+            <column name='"SEX"'/>
+        </property>
+        <property name="idCard" type="string">
+            <column name='"IDCARD"'/>
+        </property>
+        <property name="birthday" type="timestamp">
+            <column name='"BIRTHDAY"'/>
+        </property>
+        <property name="position" type="string">
+            <column name='"POSITION"'/>
+        </property>
+        <property name="jobTitle" type="string">
+            <column name='"JOBTITLE"'/>
+        </property>
+        <property name="education" type="string">
+            <column name='"EDUCATION"'/>
+        </property>
+        <property name="department" type="string">
+            <column name='"DEPARTMENT"'/>
+        </property>
+        <property name="phone" type="string">
+            <column name='"PHONE"'/>
+        </property>
+        <property name="fax" type="string">
+            <column name='"FAX"'/>
+        </property>
+        <property name="email" type="string">
+            <column name='"EMAIL"'/>
+        </property>
+        <property name="signatureField" type="string">
+            <column name='"SIGNATUREFIELD"'/>
+        </property>
+        <property name="school" type="string">
+            <column name='"SCHOOL"'/>
+        </property>
+        <property name="professional" type="string">
+            <column name='"PROFESSIONAL"'/>
+        </property>
+        <property name="jobCredentials" type="string">
+            <column name='"JOBCREDENTIALS"'/>
+        </property>
+        <property name="train" type="string">
+            <column name='"TRAIN"'/>
+        </property>
+        <property name="jobUndergo" type="string">
+            <column name='"JOBUNDERGO"'/>
+        </property>
+        <property name="relevantExplanation" type="string">
+            <column name='"RELEVANTEXPLANATION"'/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"'/>
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23"/>
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23"/>
+        </property>
+        <property name="unid" type="string">
+            <column name='"UNID"' length="36"/>
+        </property>
+        <property name="EducationZM" type="string">
+            <column name='"EDUCATIONZM"'/>
+        </property>
+        <property name="isSp" type="string">
+            <column name='"ISSP"'/>
+        </property>
+        <property name="jgmc" type="string">
+            <column name='"JGMC"'/>
+        </property>
+        <property name="fileType" type="string">
+            <column name='"FILETYPE"'/>
+        </property>
+        <property name="fileTypeName" type="string">
+            <column name='"FILETYPENAME"'/>
+        </property>
+        <property name="localFilePath" type="string">
+            <column name='"LOCALFILEPATH"'/>
+        </property>
+        <property name="zcunid" type="string">
+            <column name='"ZCUNID"' length="36"/>
+        </property>
+        <property name="zcfileType" type="string">
+            <column name='"ZCFILETYPE"' />
+        </property>
+        <property name="zcfileTypeName" type="string">
+            <column name='"ZCFILETYPENAME"' />
+        </property>
+        <property name="zclocalFilePath" type="string">
+            <column name='"ZCLOCALFILEPATH"' />
+        </property>
+    </class>
+</hibernate-mapping>

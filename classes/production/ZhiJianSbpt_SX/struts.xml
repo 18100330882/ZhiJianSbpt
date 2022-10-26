@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- 避免struts 2 S2-046,S2-045漏洞,而添加 黄煜豪 20170327 -->
+    <bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest" class="org.apache.struts.extras.SecureJakartaMultipartParser"
+          name="secure-jakarta" scope="default"/>
+    <constant name="struts.multipart.parser" value="secure-jakarta"/>
+    <!-- 国际化 设置编码 -->
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <!-- 指定每次请求到达，重新加载资源文件 -->
+    <constant name="struts.i18n.reload" value="true"/>
+    <!-- 自动加载 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 提示错误信息 -->
+    <constant name="struts.devMode" value="false"/>
+    <!-- 将对象交给spring管理 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- 指定每次配置文件更改后，自动重新加载 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 上传文件配置 临时目录temp，限制大小200M -->
+    <!-- <constant name="struts.multipart.saveDir" value="../temp" /> -->
+    <constant name="struts.multipart.maxSize" value="100000000"/>
+    <!-- 指定struts2过滤地址的后缀 -->
+    <constant name="struts.action.extension" value="action"/>
+
+    <package name="base" namespace="" extends="struts-default"/>
+
+    <include file="strutsProps/struts-regist.xml"/>
+    <include file="strutsProps/struts-Area.xml"/>
+    <include file="strutsProps/struts-Clogin.xml"/>
+    <include file="strutsProps/struts-applyEnd.xml"/>
+    <include file="strutsProps/shiYsJyjc/struts-BizShiYsJyjc.xml"/>
+    <include file="strutsProps/jyjcbggl/struts-BizJyjcbggl.xml"/>
+    <include file="strutsProps/flowBase/struts-YjFlowNodes.xml"/>
+    <include file="strutsProps/common/struts-common.xml"/>
+    <include file="strutsProps/common/struts-publicInterface.xml"/>
+    <include file="strutsProps/zzrd/struts-biz-api-shiysjyjc.xml"/>
+    <include file="strutsProps/zzrd/struts-api-shiysjyjc-sqs.xml"/>
+    <include file="strutsProps/zzrd/struts-api-shiysjyjc-sqlx.xml"/>
+    <include file="strutsProps/zzrd/struts-api-shiysjyjc-cd.xml"/>
+    <include file="strutsProps/zzrd/struts-api-shiysjyjc-jgzy.xml"/>
+    <include file="strutsProps/zzrd/struts-shiysjyjcFuJian.xml"/>
+    <include file="strutsProps/flowBase/struts-YjFlowInstWenShu.xml"/>
+    <!--检验检测附件上传-->
+    <include file="strutsProps/zzrd/struts-api-file.xml"/>
+    <!--检验检测附件类型-->
+    <include file="strutsProps/zzrd/struts-api-fujiantype.xml"/>
+    <!--检验检测人员信息-->
+    <include file="strutsProps/zzrd/struts-api-shiysjyjc-ry.xml"/>
+    <!--检验检测授权签字人信息-->
+    <include file="strutsProps/zzrd/struts-api-shiysjyjc-qzr.xml"/>
+    <!--检验检测流转信息-->
+    <include file="strutsProps/zzrd/struts-YjFlowInstLog.xml"/>
+    <!-- 检验检测机构自我承诺变更管理 -->
+    <include file="strutsProps/jyjcbggl/struts-api-zwcnBg.xml"/>
+    <!-- 检验检测机构注销管理 -->
+    <include file="strutsProps/jyjcJgzx/struts-biz-api-zxsqb.xml"/>
+    <include file="strutsProps/zzrd/struts-api-shiysjyjc-nl.xml"/>
+    <!--检验检测 变更管理-->
+    <include file="strutsProps/jyjcbggl/struts-changeApplyInfo.xml"/>
+    <!--启动流程用-->
+    <include file="strutsProps/startFlow/struts-bps-flow.xml"/>
+    <include file="strutsProps/startFlow/struts-cancellationTable.xml"/>
+    <!--采集控制器-->
+    <include file="strutsProps/jyjccj/struts-jycjcj-collect.xml"/>
+</struts>

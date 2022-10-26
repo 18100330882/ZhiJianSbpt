@@ -1,0 +1,51 @@
+JSP页面中有哪些方法可以传递参数?
+页面的参数怎么传递到action?
+请大家帮帮忙，我有些搞不清楚！
+答案找到了，谢谢大家！
+jsp中的参数传递
+1：利用表单来传递值：
+    <form action="target.jsp"> <input type=text name="usename" value="tom"></form>
+2:l利用隐藏字段来传递值
+   <form action="target.jsp"> <input type=hidden name="test" value="test"></form>
+3:利用cookie对象来传递
+Cookie cookie=new Cookie("my","liuliu")
+cookie.setMaxage(60*60);(以秒为单位)最大的生命周期
+response.addCookie(cookie);
+Cookie[] cookies=request.getCookies();(可以通过遍历此数组来访问值)
+4：session
+***java.util.Map<String, Object> session = ActionContext.getContext().getSession();
+***session.put("s_username", username);
+***String username = (String) session.get("s_username");
+session.setAttribute("paramName",paramname);
+String name=session.getAttribute("paramName")
+5:通过链接来传递
+String name=request.getParameter("name");
+<a href="welcome.jsp?name=<%=name%>">
+
+
+JSP 向action传递参数的方式   .
+1、直接在写url的时候传   例如：<a href='<%=path %>/testManage_showAllTest?testId=1'></a>
+这样，就可以在相应的action中用request.getParameter("testId")取得参数
+ 
+    
+2、在跳转前的一页设置
+request.setAttribute("testId","1");
+然后在action中调用request.getAttribute("testId")取得参数
+ 
+  
+3、最需要注意的一点
+ 有的时候，我们需要在提交表单form时传递动态参数。
+ 这个时候前两种方法都不可用，会出现参数传不过去，没反应，也不报错的情况。
+
+
+ 这种情况，我们应该使用一个隐藏域
+ 在form中写诸如下面的代码，以便参数传到ActionForm中，当然ActionForm中要加上这个属性。
+<input id="testId" type="hidden" name="testId" value='1'></input>，这样在action中提取这个参数就可以了
+
+备注：附近JSP中如何设置input的value值
+
+document.getElementById("testId").setAttribute("value","2");
+
+在与后台交互时
+ // dataType:"json",//返回的数据是json格式时，是必须加的。 
+ //tree.loadList(json2,"id","parentId");     

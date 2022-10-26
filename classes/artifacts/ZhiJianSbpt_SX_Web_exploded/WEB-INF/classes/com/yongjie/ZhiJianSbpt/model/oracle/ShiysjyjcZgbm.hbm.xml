@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ShiysjyjcZgbm" table='"SHIYSJYJCZGBM"'>
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"'/>
+            <generator class="native">
+                <param name="sequence">SEQ_SHIYSJYJCZGBM</param>
+            </generator>
+        </id>
+
+        <property name="zgbmName" type="java.lang.String">
+            <column name='"ZGBMNAME"' length="50">
+                <comment>主管部门名称</comment>
+            </column>
+        </property>
+
+        <property name="zgbmDm" type="java.lang.String">
+            <column name='"ZGBMDM"' length="50">
+                <comment>主管部门代码</comment>
+            </column>
+        </property>
+
+        <property name="isEnabled" type="java.lang.String">
+            <column name='"ISENABLED"' length="50">
+                <comment>是否有效</comment>
+            </column>
+        </property>
+
+        <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"'>
+                <comment>更新时间</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

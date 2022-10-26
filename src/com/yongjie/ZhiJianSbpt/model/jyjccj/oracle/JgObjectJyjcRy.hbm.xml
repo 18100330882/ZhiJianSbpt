@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.jyjccj.JgobjectJyjcRy" table="JGOBJECT_JYJCRY">
+        <id name="id" type="java.lang.Long">
+            <column name="ID"/>
+            <generator class="native">
+                <param name="sequence">SEQ_JGOBJECT_JYJCRY</param>
+            </generator>
+        </id>
+
+        <property name="sex" type="string">
+            <column name="SEX"/>
+        </property>
+        <property name="name" type="string">
+            <column name="NAME"/>
+        </property>
+        <property name="age" type="integer">
+            <column name="AGE"/>
+        </property>
+        <property name="education" type="string">
+            <column name="EDUCATION"/>
+        </property>
+        <property name="zhic" type="string">
+            <column name="ZHIC"/>
+        </property>
+        <property name="zhiw" type="string">
+            <column name="ZHIW"/>
+        </property>
+        <property name="zhuanye" type="string">
+            <column name="ZHUANYE"/>
+        </property>
+        <property name="YearOfService" type="string">
+            <column name="YEAROFSERVICE"/>
+        </property>
+        <property name="telephone" type="string">
+            <column name="TELEPHONE"/>
+        </property>
+        <property name="dept" type="string">
+            <column name="DEPT"/>
+        </property>
+        <property name="sfzh" type="string">
+            <column name="SFZH"/>
+        </property>
+        <property name="cid" type="long">
+            <column name="CID"/>
+        </property>
+        <property name="cardType" type="string">
+            <column name="CARDTYPE"/>
+        </property>
+        <property name="serialNumber" type="string">
+            <column name="SERIALNUMBER"/>
+        </property>
+
+        <property name="zsbh" type="string">
+            <column name="ZSBH"/>
+        </property>
+        <property name="flag" type="string">
+            <column name="FLAG"/>
+        </property>
+
+        <property name="createDate" type="timestamp">
+            <column name="CREATEDATE"/>
+        </property>
+
+        <property name="updateDate" type="timestamp">
+            <column name="UPDATEDATE"/>
+        </property>
+        <property name="collectFujianId" type="long">
+            <column name='"COLLECTFUJIANID"'/>
+        </property>
+    </class>
+</hibernate-mapping>

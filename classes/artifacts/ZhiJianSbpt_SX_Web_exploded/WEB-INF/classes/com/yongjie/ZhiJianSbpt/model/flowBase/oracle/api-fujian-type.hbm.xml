@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.flowBase.ApiFujianType" table='"API_FUJIANTYPE"' >
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"' />
+            <generator class="native">
+               <param name="sequence">SEQ_API_FUJIANTYPE</param>
+            </generator>
+        </id>
+       <property name="flowId" type="java.lang.Long">
+            <column name='"FLOWID"' />
+        </property>
+        <property name="sqsType" type="string">
+            <column name="SQSTYPE"/>
+        </property>
+        <property name="name" type="string">
+            <column name='"NAME"' />
+        </property>
+        <property name="fileExtense" type="string">
+            <column name="FILEEXTENSE"/>
+        </property>
+        <property name="flag" type="string">
+            <column name='"FLAG"' />
+        </property>
+        <property name="statue" type="string">
+            <column name='"STATUE"' />
+        </property>
+        <property name="groupId" type="java.lang.Integer">
+            <column name="GROUPID"/>
+        </property>
+        <property name="paiXu" type="java.lang.Integer">
+            <column name="PAIXU"/>
+        </property>
+    </class>
+</hibernate-mapping>

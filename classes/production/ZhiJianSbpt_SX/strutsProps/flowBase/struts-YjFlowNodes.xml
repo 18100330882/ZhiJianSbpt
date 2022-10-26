@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="YjFlowNodesManager" extends="base" namespace="/">
+        <action name="flowNodes_*" class="YjFlowNodesAction" method="{1}">
+            <result name="getNodeMcByFlowInstId">WEB-INF/jsp/flowBase/YjFlowNodeAjaxService.jsp?method=getNodeMcByFlowInstId</result>
+            <result name="getBizIdByflowId">WEB-INF/jsp/flowBase/YjFlowNodeAjaxService.jsp?method=getBizIdByflowId</result>
+            <result name="getFlowNodesByNodeId">WEB-INF/jsp/flowBase/YjFlowNodeAjaxService.jsp?method=getFlowNodesByNodeId</result>
+            <result name="getNodeMcByFlowInstIdOnEnd">WEB-INF/jsp/flowBase/YjFlowNodeAjaxService.jsp?method=getNodeMcByFlowInstIdOnEnd</result>
+            <result name="getNodeMo">WEB-INF/jsp/flowBase/YjFlowNodeAjaxService.jsp?method=getNodeMo</result>
+        </action>
+    </package>
+</struts>

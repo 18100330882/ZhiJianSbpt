@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-9-28 18:03:59 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yongjie.ZhiJianSbpt.model.ApiShiYsJyjcSqs" table='"API_SHIYSJYJC_SQS"' >
+        <id name="id" type="java.lang.Long">
+            <column name='"ID"' />
+            <generator class="native">
+               <param name="sequence">SEQ_API_SHIYSJYJC_SQS</param>
+            </generator>
+        </id>
+        <property name="jgmc" type="string">
+            <column name='"JGMC"' />
+        </property>
+        <property name="registerAdress" type="string">
+            <column name='"REGISTERADRESS"' />
+        </property>  
+        <property name="adress" type="string">
+            <column name='"ADRESS"' />
+        </property>
+        <property name="postcode" type="string">
+            <column name='"POSTCODE"' />
+        </property>
+        <property name="fax" type="string">
+            <column name='"FAX"' />
+        </property>
+        <property name="email" type="string">
+            <column name='"EMAIL"' />
+        </property>
+        <property name="principal" type="string">
+            <column name='"PRINCIPAL"' />
+        </property>
+        <property name="position" type="string">
+            <column name='"POSITION"' />
+        </property>
+        <property name="telephone" type="string">
+            <column name='"TELEPHONE"' />
+        </property>
+        <property name="phone" type="string">
+            <column name='"PHONE"' />
+        </property>
+         <property name="contactPerson" type="string">
+            <column name='"CONTACTPERSON"' />
+        </property>
+        <property name="contactPosition" type="string">
+            <column name='"CONTACTPOSITION"' />
+        </property>
+          <property name="contactTelephone" type="string">
+            <column name='"CONTACTTELEPHONE"' />
+        </property>
+            <property name="contactPhone" type="string">
+            <column name='"CONTACTPHONE"' />
+        </property>
+            <property name="shxydm" type="string">
+            <column name='"SHXYDM"' />
+         </property>
+            <property name="legalPerson" type="string">
+            <column name='"LEGALPERSON"' />
+        </property>
+            <property name="legalunitName" type="string">
+            <column name='"LEGALUNITNAME"' />
+        </property>
+            <property name="legalunitAdress" type="string">
+            <column name='"LEGALUNITADRESS"' />
+        </property>
+            <property name="legalPrincipal" type="string">
+            <column name='"LEGALPRINCIPAL"' />
+         </property>
+            <property name="legalposition" type="string">
+            <column name='"LEGALPOSITION"' />
+        </property>
+            <property name="legalphone" type="string">
+            <column name='"LEGALPHONE"' />
+        </property>
+            <property name="legalshxydm" type="string">
+            <column name='"LEGALSHXYDM"' />
+        </property>
+            <property name="competentunitName" type="string">
+            <column name='"COMPETENTUNITNAME"' />
+        </property>
+            <property name="competentunitAdress" type="string">
+            <column name='"COMPETENTUNITADRESS"' />
+        </property>
+            <property name="competentPrincipal" type="string">
+            <column name='"COMPETENTPRINCIPAL"' />
+        </property>
+            <property name="competentposition" type="string">
+            <column name='"COMPETENTPOSITION"' />
+        </property>
+            <property name="competentphone" type="string">
+            <column name='"COMPETENTPHONE"' />
+        </property>
+            <property name="characteristic" type="string">
+            <column name='"CHARACTERISTIC"' />
+        </property>
+            <property name="legalPersonjgType" type="string">
+            <column name='"LEGALPERSONJGTYPE"' />
+          </property>
+            <property name="legalPersonType" type="string">
+            <column name='"LEGALPERSONTYPE"' />
+        </property>
+        <property name="serialNumber" type="string">
+            <column name='"SERIALNUMBER"' />
+        </property>
+        <property name="zsbh" type="string">
+            <column name='"ZSBH"' />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name='"CREATEDATE"' length="23" />
+        </property>
+         <property name="updateDate" type="timestamp">
+            <column name='"UPDATEDATE"' length="23" />
+        </property>   
+    </class>
+</hibernate-mapping>

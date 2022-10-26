@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "D:\MarsJ2EEWorkspace/ZhiJianXzsp/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hibernate.connection.autocommit">true</property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <!-- Echo beautiful format sql sentence -->
+        <property name="format_sql">false</property>
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- import mapping file -->
+        <!--天津-->
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/sysBase/oracle/Menu.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/sysBase/oracle/Dept.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/flowBase/oracle/YjFlow.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/AccountSbpt.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/biz-api-shiysjyjc.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-sqs.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-sqlx.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-jgzy.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysJyjc-cd.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-qzr.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-ry.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-nl.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/Area.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/JgObject.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/SerialNumber.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/ShiysjyjcZgbm.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/ShiYsJyjcFuJian.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/ApplyEnd.hbm..xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/ShiYsJyjcXchcPsbgNlHz.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/shiYsJyjc/oracle/BizShiYsJyjc.hbm.xml"/>
+        <!--  附件  -->
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/flowBase/oracle/YjFlowInstWenShu.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/flowBase/oracle/YjFlowFuJianList.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/flowBase/oracle/api-file.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/flowBase/oracle/api-fujian-type.hbm.xml"/>
+        <!-- 流转信息 -->
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/YjFlowInstLog.hbm.xml"/>
+        <!-- 检验检测机构变更管理主表 -->
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/jyjcbggl/oracle/biz-api-zwcnbg.hbm.xml"/>
+        <!-- 检验检测机构注销申请表 -->
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/jyjcJgzx/oracle/biz-api-zxsqb.hbm.xml"/>
+
+        <!--变更管理 自我声明 申请类型(地址变更，取消能力，法人变更，名称变更，人员变更，签字人变更，标准方法变更) 审批表-->
+        <mapping resource="com/yongjie/ZhiJianSbpt/bggl/model/oracle/PersonChangeDetails.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/bggl/model/oracle/SqqzrChangeDetails.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/bggl/model/oracle/StandardChangeDetails.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/bggl/model/oracle/ChangeApplyInfo.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/bggl/model/oracle/CancelNlDetails.hbm.xml"/>
+        <!--startFlow用-->
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/ApiFlow.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/AccountXzsp.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/UsersInRoles.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/YjFlowInst.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/YjFlowInstParticipant.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/YjFlowNodes.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/YjNodeInst.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/YjWorkItem.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/startFlow/model/oracle/CancellationTable.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/jyjccj/oracle/JgObjectJyjcnl.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/jyjccj/oracle/JgObjectJyjcQzr.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/jyjccj/oracle/JgObjectJyjcRy.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/jyjccj/oracle/collectFujian.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-yqsbsbpt.hbm.xml"/>
+
+        <!--采集授权签字人表-->
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/jyjccj/oracle/CjSqqzr.hbm.xml"/>
+        <mapping resource="com/yongjie/ZhiJianSbpt/model/oracle/api-shiysjyjc-nlsbpt.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>

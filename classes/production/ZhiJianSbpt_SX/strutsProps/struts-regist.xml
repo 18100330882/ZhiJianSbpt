@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="RegistAction" extends="base" namespace="/">
+        <action name="regist_*" class="RegistAction" method="{1}">
+            <result name="gotoTree">registAreaTree.jsp</result>
+            <result name="filterAreaTree">WEB-INF/jsp/sysReport/RegistAjaxService.jsp?method=filterAreaTree</result>
+            <result name="doRegist">WEB-INF/jsp/sysReport/RegistAjaxService.jsp?method=doRegist</result>
+            <result name="check">WEB-INF/jsp/sysReport/RegistAjaxService.jsp?method=check</result>
+            <result name="changePsd">WEB-INF/jsp/sysReport/RegistAjaxService.jsp?method=changePsd</result>
+            <result name="getInfoByUserName">WEB-INF/jsp/sysReport/RegistAjaxService.jsp?method=getInfoByUserName</result>
+            <result name="checkOldPsd">WEB-INF/jsp/sysReport/RegistAjaxService.jsp?method=checkOldPsd</result>
+        </action>
+    </package>
+</struts>

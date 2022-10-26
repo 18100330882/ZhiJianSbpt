@@ -1,0 +1,10 @@
+##技术文章资料
+##以map和value的形式：map代表主题名，value代表文章所在网址
+##author：黄煜豪
+##createTime：2016-07-22
+
+svn项目同步操作：http://www.softown.cn/post/99.html
+eliplise中svn更改用户名http://blog.csdn.net/carterjin/article/details/7589812/
+13.关于表单的同时赋值 form.setData() 如果该方法连续使用两次 后面的会覆盖前面的赋值 怎么办?
+解答:form.setData(data,true)默认为true;
+//true代表如果data里没有某一控件的值 就会把该控件的值 设为空 如果改为false 就会 有就赋值 ,没有就保持原状

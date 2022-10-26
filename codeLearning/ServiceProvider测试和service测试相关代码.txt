@@ -1,0 +1,21 @@
+//serviceProvider测试相关代码
+public class TestServiceProvider {
+	@Test
+	public void testServiceProvider(){
+		IUserService userService = (IUserService) ServiceProvider.getService(IUserService.Service_Name);
+		User user = new User();
+		user.setUsername("zhan1");
+		user.setPassword("121");
+		userService.saveUser(user);
+	}
+}
+
+//service测试相关代码，通过spring
+public class TestService {
+	@Test
+	public void testDelUser(){
+		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
+		IUserService userService = (IUserService) ac.getBean(IUserService.Service_Name);
+		userService.delUser(2L);
+	}
+}

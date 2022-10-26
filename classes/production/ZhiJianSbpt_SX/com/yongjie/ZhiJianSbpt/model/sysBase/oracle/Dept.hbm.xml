@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-7-13 9:56:09 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.yongjie.ZhiJianSbpt.model.sysBase.Dept" table='"DEPT"'>
+		<id name="id" type="long">
+			<column name='"ID"' />
+			<generator class="native">
+				<param name="sequence">seq_DEPT</param>
+			</generator>
+		</id>
+		<property name="deptName" type="string">
+			<column name='"DEPTNAME"' not-null="true" />
+		</property>
+		<property name="deptLxr" type="string">
+			<column name='"DEPTLXR"' not-null="true" />
+		</property>
+		<property name="deptPhone" type="string">
+			<column name='"DEPTPHONE"' length="20" not-null="true" />
+		</property>
+		<property name="areaId" type="long">
+			<column name='"AREAID"' not-null="true" />
+		</property>
+		<property name="parentId" type="long">
+			<column name='"PARENTID"' not-null="true" />
+		</property>
+		<property name="parentPath" type="string">
+			<column name='"PARENTPATH"' length="100" not-null="true" />
+		</property>
+		<property name="depth" type="integer">
+			<column name='"DEPTH"' not-null="true" />
+		</property>
+		<property name="paiXu" type="integer">
+			<column name='"PAIXU"' not-null="true" />
+		</property>
+		<property name="address" type="string">
+			<column name='"ADDRESS"' />
+		</property>
+		<property name="scfw" type="string">
+			<column name='"SCFW"' />
+		</property>
+		<property name="caoR" type="string">
+			<column name='"CAOR"' length="50" not-null="true" />
+		</property>
+		<property name="caoDate" type="timestamp">
+			<column name='"CAODATE"' length="23" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>
